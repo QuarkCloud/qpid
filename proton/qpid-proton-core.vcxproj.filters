@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include=".\core\object\object.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\core\object\list.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\core\object\map.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\core\object\string.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\core\object\iterator.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\core\object\record.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\core\log.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\core\util.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\core\error.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\core\buffer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\core\types.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\core\framing.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\core\codec.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\core\decoder.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\core\encoder.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\core\dispatcher.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\core\connection_driver.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\core\engine.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\core\event.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\core\autodetect.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\core\transport.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\core\message.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\sasl\sasl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\sasl\default_sasl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\sasl\cyrus_stub.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\ssl\schannel.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\compiler\msvc\snprintf.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\proton\cid.h">
+      <Filter>API Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\proton\codec.h">
+      <Filter>API Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\proton\condition.h">
+      <Filter>API Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\proton\connection.h">
+      <Filter>API Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\proton\connection_driver.h">
+      <Filter>API Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\proton\delivery.h">
+      <Filter>API Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\proton\disposition.h">
+      <Filter>API Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\proton\engine.h">
+      <Filter>API Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\proton\error.h">
+      <Filter>API Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\proton\event.h">
+      <Filter>API Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\proton\import_export.h">
+      <Filter>API Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\proton\link.h">
+      <Filter>API Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\proton\listener.h">
+      <Filter>API Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\proton\log.h">
+      <Filter>API Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\proton\message.h">
+      <Filter>API Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\proton\netaddr.h">
+      <Filter>API Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\proton\object.h">
+      <Filter>API Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\proton\proactor.h">
+      <Filter>API Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\proton\sasl.h">
+      <Filter>API Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\proton\sasl-plugin.h">
+      <Filter>API Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\proton\session.h">
+      <Filter>API Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\proton\ssl.h">
+      <Filter>API Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\proton\terminus.h">
+      <Filter>API Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\proton\transport.h">
+      <Filter>API Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\proton\type_compat.h">
+      <Filter>API Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\proton\types.h">
+      <Filter>API Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\encodings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\protocol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\proton\version.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>    
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="API Header Files">
+      <UniqueIdentifier>{92DF4713-55D8-3B34-AD4D-8C0F73503BC3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{95EF9326-D6CB-3B47-A1DD-668A48AB34BB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{15A267F2-5DC6-33D8-9BCB-E61DA7946267}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{45EDACC2-DE7C-3FBB-B500-6C148441578D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
