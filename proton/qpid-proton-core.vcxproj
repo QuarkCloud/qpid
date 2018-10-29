@@ -26,7 +26,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <CharacterSet>MultiByte</CharacterSet>
+    <CharacterSet>NotSet</CharacterSet>
     <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
@@ -38,22 +38,21 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\qpid\qpid-proton-0.26.0\build\c\Debug\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">qpid-proton-core.dir\Debug\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">qpid-proton-cored</TargetName>
-    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\qpid\qpid-proton-0.26.0\build\c\Release\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">qpid-proton-core.dir\Release\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">qpid-proton-core</TargetName>
-    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)win32\</OutDir>
+    <TargetName>$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)win32\</OutDir>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\include;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -67,8 +66,9 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;CMAKE_INTDIR="Debug";qpid_proton_core_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;qpid_proton_core_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
+      <PrecompiledHeaderFile />
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";qpid_proton_core_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -88,8 +88,6 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>E:/qpid/qpid-proton-0.26.0/build/c/Debug/qpid-proton-cored.lib</ImportLibrary>
-      <ProgramDataBaseFile>E:/qpid/qpid-proton-0.26.0/build/c/Debug/qpid-proton-cored.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -98,7 +96,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\include;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DisableSpecificWarnings>4244;4267;4800;4996</DisableSpecificWarnings>
@@ -133,44 +131,12 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>E:/qpid/qpid-proton-0.26.0/build/c/Release/qpid-proton-core.lib</ImportLibrary>
-      <ProgramDataBaseFile>E:/qpid/qpid-proton-0.26.0/build/c/Release/qpid-proton-core.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
     </ProjectReference>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <CustomBuild Include="..\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule E:/qpid/qpid-proton-0.26.0/c/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
-D:\cmake\bin\cmake.exe -SE:/qpid/qpid-proton-0.26.0 -BE:/qpid/qpid-proton-0.26.0/build --check-stamp-file E:/qpid/qpid-proton-0.26.0/build/c/CMakeFiles/generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/qpid/qpid-proton-0.26.0/c/CMakeLists.txt;D:\cmake\share\cmake-3.13\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;D:\cmake\share\cmake-3.13\Modules\WriteBasicConfigVersionFile.cmake;..\CMakeLists.txt;..\include\proton\cid.h;..\include\proton\codec.h;..\include\proton\condition.h;..\include\proton\connection.h;..\include\proton\connection_driver.h;..\include\proton\cproton.i;..\include\proton\delivery.h;..\include\proton\disposition.h;..\include\proton\engine.h;..\include\proton\error.h;..\include\proton\event.h;..\include\proton\handlers.h;..\include\proton\import_export.h;..\include\proton\link.h;..\include\proton\listener.h;..\include\proton\log.h;..\include\proton\message.h;..\include\proton\messenger.h;..\include\proton\netaddr.h;..\include\proton\object.h;..\include\proton\proactor.h;..\include\proton\reactor.h;..\include\proton\sasl-plugin.h;..\include\proton\sasl.h;..\include\proton\selectable.h;..\include\proton\session.h;..\include\proton\ssl.h;..\include\proton\terminus.h;..\include\proton\transport.h;..\include\proton\type_compat.h;..\include\proton\types.h;..\include\proton\url.h;..\include\proton\version.h.in;.\ProtonConfig.cmake.in;.\compiler\msvc\snprintf.c;.\core\autodetect.c;.\core\autodetect.h;.\core\buffer.c;.\core\buffer.h;.\core\codec.c;.\core\config.h;.\core\connection_driver.c;.\core\data.h;.\core\decoder.c;.\core\decoder.h;.\core\dispatch_actions.h;.\core\dispatcher.c;.\core\dispatcher.h;.\core\encoder.c;.\core\encoder.h;.\core\engine-internal.h;.\core\engine.c;.\core\error.c;.\core\event.c;.\core\framing.c;.\core\framing.h;.\core\log.c;.\core\log_private.h;.\core\max_align.h;.\core\message-internal.h;.\core\message.c;.\core\object\iterator.c;.\core\object\list.c;.\core\object\map.c;.\core\object\object.c;.\core\object\record.c;.\core\object\string.c;.\core\transport.c;.\core\transport.h;.\core\types.c;.\core\util.c;.\core\util.h;.\extra\url.c;.\handlers\flowcontroller.c;.\handlers\handshaker.c;.\handlers\iohandler.c;.\libqpid-proton-core.pc.in;.\libqpid-proton-proactor.pc.in;.\libqpid-proton.pc.in;.\messenger\messenger.c;.\messenger\messenger.h;.\messenger\store.c;.\messenger\store.h;.\messenger\subscription.c;.\messenger\subscription.h;.\messenger\transform.c;.\messenger\transform.h;.\platform\platform.c;.\platform\platform.h;.\platform\platform_fmt.h;.\proactor\epoll.c;.\proactor\libuv.c;.\proactor\netaddr-internal.h;.\proactor\proactor-internal.c;.\proactor\proactor-internal.h;.\proactor\win_iocp.c;.\reactor\acceptor.c;.\reactor\connection.c;.\reactor\handler.c;.\reactor\io.h;.\reactor\io\posix\io.c;.\reactor\io\posix\selector.c;.\reactor\io\windows\io.c;.\reactor\io\windows\iocp.c;.\reactor\io\windows\iocp.h;.\reactor\io\windows\selector.c;.\reactor\io\windows\write_pipeline.c;.\reactor\reactor.c;.\reactor\reactor.h;.\reactor\selectable.c;.\reactor\selectable.h;.\reactor\selector.h;.\reactor\timer.c;.\sasl\cyrus_sasl.c;.\sasl\cyrus_stub.c;.\sasl\default_sasl.c;.\sasl\sasl-internal.h;.\sasl\sasl.c;.\ssl\openssl.c;.\ssl\schannel.c;.\ssl\ssl-internal.h;.\ssl\ssl_stub.c;..\versions.cmake;E:\qpid\qpid-proton-0.26.0\tools\cmake\Modules\WindowsC99CheckDef.cmake;..\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\qpid\qpid-proton-0.26.0\build\c\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule E:/qpid/qpid-proton-0.26.0/c/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
-D:\cmake\bin\cmake.exe -SE:/qpid/qpid-proton-0.26.0 -BE:/qpid/qpid-proton-0.26.0/build --check-stamp-file E:/qpid/qpid-proton-0.26.0/build/c/CMakeFiles/generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/qpid/qpid-proton-0.26.0/c/CMakeLists.txt;D:\cmake\share\cmake-3.13\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;D:\cmake\share\cmake-3.13\Modules\WriteBasicConfigVersionFile.cmake;..\CMakeLists.txt;..\include\proton\cid.h;..\include\proton\codec.h;..\include\proton\condition.h;..\include\proton\connection.h;..\include\proton\connection_driver.h;..\include\proton\cproton.i;..\include\proton\delivery.h;..\include\proton\disposition.h;..\include\proton\engine.h;..\include\proton\error.h;..\include\proton\event.h;..\include\proton\handlers.h;..\include\proton\import_export.h;..\include\proton\link.h;..\include\proton\listener.h;..\include\proton\log.h;..\include\proton\message.h;..\include\proton\messenger.h;..\include\proton\netaddr.h;..\include\proton\object.h;..\include\proton\proactor.h;..\include\proton\reactor.h;..\include\proton\sasl-plugin.h;..\include\proton\sasl.h;..\include\proton\selectable.h;..\include\proton\session.h;..\include\proton\ssl.h;..\include\proton\terminus.h;..\include\proton\transport.h;..\include\proton\type_compat.h;..\include\proton\types.h;..\include\proton\url.h;..\include\proton\version.h.in;.\ProtonConfig.cmake.in;.\compiler\msvc\snprintf.c;.\core\autodetect.c;.\core\autodetect.h;.\core\buffer.c;.\core\buffer.h;.\core\codec.c;.\core\config.h;.\core\connection_driver.c;.\core\data.h;.\core\decoder.c;.\core\decoder.h;.\core\dispatch_actions.h;.\core\dispatcher.c;.\core\dispatcher.h;.\core\encoder.c;.\core\encoder.h;.\core\engine-internal.h;.\core\engine.c;.\core\error.c;.\core\event.c;.\core\framing.c;.\core\framing.h;.\core\log.c;.\core\log_private.h;.\core\max_align.h;.\core\message-internal.h;.\core\message.c;.\core\object\iterator.c;.\core\object\list.c;.\core\object\map.c;.\core\object\object.c;.\core\object\record.c;.\core\object\string.c;.\core\transport.c;.\core\transport.h;.\core\types.c;.\core\util.c;.\core\util.h;.\extra\url.c;.\handlers\flowcontroller.c;.\handlers\handshaker.c;.\handlers\iohandler.c;.\libqpid-proton-core.pc.in;.\libqpid-proton-proactor.pc.in;.\libqpid-proton.pc.in;.\messenger\messenger.c;.\messenger\messenger.h;.\messenger\store.c;.\messenger\store.h;.\messenger\subscription.c;.\messenger\subscription.h;.\messenger\transform.c;.\messenger\transform.h;.\platform\platform.c;.\platform\platform.h;.\platform\platform_fmt.h;.\proactor\epoll.c;.\proactor\libuv.c;.\proactor\netaddr-internal.h;.\proactor\proactor-internal.c;.\proactor\proactor-internal.h;.\proactor\win_iocp.c;.\reactor\acceptor.c;.\reactor\connection.c;.\reactor\handler.c;.\reactor\io.h;.\reactor\io\posix\io.c;.\reactor\io\posix\selector.c;.\reactor\io\windows\io.c;.\reactor\io\windows\iocp.c;.\reactor\io\windows\iocp.h;.\reactor\io\windows\selector.c;.\reactor\io\windows\write_pipeline.c;.\reactor\reactor.c;.\reactor\reactor.h;.\reactor\selectable.c;.\reactor\selectable.h;.\reactor\selector.h;.\reactor\timer.c;.\sasl\cyrus_sasl.c;.\sasl\cyrus_stub.c;.\sasl\default_sasl.c;.\sasl\sasl-internal.h;.\sasl\sasl.c;.\ssl\openssl.c;.\ssl\schannel.c;.\ssl\ssl-internal.h;.\ssl\ssl_stub.c;..\versions.cmake;E:\qpid\qpid-proton-0.26.0\tools\cmake\Modules\WindowsC99CheckDef.cmake;..\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\qpid\qpid-proton-0.26.0\build\c\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
-    </CustomBuild>
-  </ItemGroup>
   <ItemGroup>
     <ClCompile Include=".\core\object\object.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>

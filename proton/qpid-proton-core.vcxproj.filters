@@ -172,14 +172,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
-  <ItemGroup>    
-  </ItemGroup>
   <ItemGroup>
     <Filter Include="API Header Files">
       <UniqueIdentifier>{92DF4713-55D8-3B34-AD4D-8C0F73503BC3}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="CMake Rules">
-      <UniqueIdentifier>{95EF9326-D6CB-3B47-A1DD-668A48AB34BB}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files">
       <UniqueIdentifier>{15A267F2-5DC6-33D8-9BCB-E61DA7946267}</UniqueIdentifier>
