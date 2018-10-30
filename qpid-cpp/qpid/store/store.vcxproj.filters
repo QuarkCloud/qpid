@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\store\MessageStorePlugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\store\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{200479CF-CC1F-3FDD-B530-F3B5336BC87F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

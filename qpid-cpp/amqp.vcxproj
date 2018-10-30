@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2F96213C-546E-39EE-993E-D423BD357A50}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>amqp</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)win32\</OutDir>
+    <TargetName>$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(BOOST_ROOT);$(ProjectDir)..\include;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /w44996</AdditionalOptions>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4244;4800;4355;4267</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0502;BOOST_ALL_DYN_LINK;amqp_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0502;BOOST_ALL_DYN_LINK;CMAKE_INTDIR=\"Debug\";amqp_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\qpid\qpid-cpp-1.38.0\src\windows\resources;E:\boost_1_68_0;E:\qpid\qpid-cpp-1.38.0\src;E:\qpid\qpid-cpp-1.38.0\src\..\include;E:\qpid\qpid-cpp-1.38.0\build\src;E:\qpid\qpid-cpp-1.38.0\build\src\..\include;E:\qpid\qpid-cpp-1.38.0\qpid-proton\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\qpid\qpid-cpp-1.38.0\src\windows\resources;E:\boost_1_68_0;E:\qpid\qpid-cpp-1.38.0\src;E:\qpid\qpid-cpp-1.38.0\src\..\include;E:\qpid\qpid-cpp-1.38.0\build\src;E:\qpid\qpid-cpp-1.38.0\build\src\..\include;E:\qpid\qpid-cpp-1.38.0\qpid-proton\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>qpid-proton-cored.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)win32;$(BOOST_ROOT)\stage\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/qpid/qpid-cpp-1.38.0/build/src/Debug/amqpd.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/qpid/qpid-cpp-1.38.0/build/src/Debug/amqpd.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\qpid\qpid-cpp-1.38.0\src\windows\resources;E:\boost_1_68_0;E:\qpid\qpid-cpp-1.38.0\src;E:\qpid\qpid-cpp-1.38.0\src\..\include;E:\qpid\qpid-cpp-1.38.0\build\src;E:\qpid\qpid-cpp-1.38.0\build\src\..\include;E:\qpid\qpid-cpp-1.38.0\qpid-proton\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /w44996</AdditionalOptions>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4244;4800;4355;4267</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0502;BOOST_ALL_DYN_LINK;CMAKE_INTDIR="Release";amqp_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0502;BOOST_ALL_DYN_LINK;CMAKE_INTDIR=\"Release\";amqp_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\qpid\qpid-cpp-1.38.0\src\windows\resources;E:\boost_1_68_0;E:\qpid\qpid-cpp-1.38.0\src;E:\qpid\qpid-cpp-1.38.0\src\..\include;E:\qpid\qpid-cpp-1.38.0\build\src;E:\qpid\qpid-cpp-1.38.0\build\src\..\include;E:\qpid\qpid-cpp-1.38.0\qpid-proton\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\qpid\qpid-cpp-1.38.0\src\windows\resources;E:\boost_1_68_0;E:\qpid\qpid-cpp-1.38.0\src;E:\qpid\qpid-cpp-1.38.0\src\..\include;E:\qpid\qpid-cpp-1.38.0\build\src;E:\qpid\qpid-cpp-1.38.0\build\src\..\include;E:\qpid\qpid-cpp-1.38.0\qpid-proton\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Release\qpidbroker.lib;Release\qpidcommon.lib;..\..\qpid-proton\lib\qpid-proton-core.lib;Release\qpidtypes.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>E:/boost_1_68_0/stage/lib;E:/boost_1_68_0/stage/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/qpid/qpid-cpp-1.38.0/build/src/Release/amqp.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/qpid/qpid-cpp-1.38.0/build/src/Release/amqp.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include=".\qpid\broker\amqp\Authorise.h" />
+    <ClCompile Include=".\qpid\broker\amqp\Authorise.cpp" />
+    <ClInclude Include=".\qpid\broker\amqp\BrokerContext.h" />
+    <ClCompile Include=".\qpid\broker\amqp\BrokerContext.cpp" />
+    <ClInclude Include=".\qpid\broker\amqp\Connection.h" />
+    <ClCompile Include=".\qpid\broker\amqp\Connection.cpp" />
+    <ClInclude Include=".\qpid\broker\amqp\DataReader.h" />
+    <ClCompile Include=".\qpid\broker\amqp\DataReader.cpp" />
+    <ClInclude Include=".\qpid\broker\amqp\Domain.h" />
+    <ClCompile Include=".\qpid\broker\amqp\Domain.cpp" />
+    <ClInclude Include=".\qpid\broker\amqp\Exception.h" />
+    <ClCompile Include=".\qpid\broker\amqp\Exception.cpp" />
+    <ClInclude Include=".\qpid\broker\amqp\Filter.h" />
+    <ClCompile Include=".\qpid\broker\amqp\Filter.cpp" />
+    <ClInclude Include=".\qpid\broker\amqp\Header.h" />
+    <ClCompile Include=".\qpid\broker\amqp\Header.cpp" />
+    <ClInclude Include=".\qpid\broker\amqp\Incoming.h" />
+    <ClCompile Include=".\qpid\broker\amqp\Incoming.cpp" />
+    <ClInclude Include=".\qpid\broker\amqp\Interconnect.h" />
+    <ClCompile Include=".\qpid\broker\amqp\Interconnect.cpp" />
+    <ClInclude Include=".\qpid\broker\amqp\Interconnects.h" />
+    <ClCompile Include=".\qpid\broker\amqp\Interconnects.cpp" />
+    <ClInclude Include=".\qpid\broker\amqp\ManagedConnection.h" />
+    <ClCompile Include=".\qpid\broker\amqp\ManagedConnection.cpp" />
+    <ClInclude Include=".\qpid\broker\amqp\ManagedSession.h" />
+    <ClCompile Include=".\qpid\broker\amqp\ManagedSession.cpp" />
+    <ClInclude Include=".\qpid\broker\amqp\ManagedIncomingLink.h" />
+    <ClCompile Include=".\qpid\broker\amqp\ManagedIncomingLink.cpp" />
+    <ClInclude Include=".\qpid\broker\amqp\ManagedOutgoingLink.h" />
+    <ClCompile Include=".\qpid\broker\amqp\ManagedOutgoingLink.cpp" />
+    <ClInclude Include=".\qpid\broker\amqp\Message.h" />
+    <ClCompile Include=".\qpid\broker\amqp\Message.cpp" />
+    <ClInclude Include=".\qpid\broker\amqp\NodePolicy.h" />
+    <ClCompile Include=".\qpid\broker\amqp\NodePolicy.cpp" />
+    <ClInclude Include=".\qpid\broker\amqp\NodeProperties.h" />
+    <ClCompile Include=".\qpid\broker\amqp\NodeProperties.cpp" />
+    <ClInclude Include=".\qpid\broker\amqp\Outgoing.h" />
+    <ClCompile Include=".\qpid\broker\amqp\Outgoing.cpp" />
+    <ClCompile Include=".\qpid\broker\amqp\ProtocolPlugin.cpp" />
+    <ClInclude Include=".\qpid\broker\amqp\Relay.h" />
+    <ClCompile Include=".\qpid\broker\amqp\Relay.cpp" />
+    <ClInclude Include=".\qpid\broker\amqp\Sasl.h" />
+    <ClCompile Include=".\qpid\broker\amqp\Sasl.cpp" />
+    <ClInclude Include=".\qpid\broker\amqp\SaslClient.h" />
+    <ClCompile Include=".\qpid\broker\amqp\SaslClient.cpp" />
+    <ClInclude Include=".\qpid\broker\amqp\Session.h" />
+    <ClCompile Include=".\qpid\broker\amqp\Session.cpp" />
+    <ClInclude Include=".\qpid\broker\amqp\Topic.h" />
+    <ClCompile Include=".\qpid\broker\amqp\Topic.cpp" />
+    <ClInclude Include=".\qpid\broker\amqp\Translation.h" />
+    <ClCompile Include=".\qpid\broker\amqp\Translation.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

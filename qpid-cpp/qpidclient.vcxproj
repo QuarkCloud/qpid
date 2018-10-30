@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A68B6F73-B5B9-306F-BAB9-B078CF790A97}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>qpidclient</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\qpid\qpid-cpp-1.38.0\build\src\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">qpidclient.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">qpidclientd</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\qpid\qpid-cpp-1.38.0\build\src\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">qpidclient.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">qpidclient</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\qpid\qpid-cpp-1.38.0\src\windows\resources;E:\boost_1_68_0;E:\qpid\qpid-cpp-1.38.0\src;E:\qpid\qpid-cpp-1.38.0\src\..\include;E:\qpid\qpid-cpp-1.38.0\build\src;E:\qpid\qpid-cpp-1.38.0\build\src\..\include;E:\qpid\qpid-cpp-1.38.0\qpid-proton\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /w44996</AdditionalOptions>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4244;4800;4355;4267</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0502;BOOST_ALL_DYN_LINK;CMAKE_INTDIR="Debug";qpidclient_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0502;BOOST_ALL_DYN_LINK;CMAKE_INTDIR=\"Debug\";qpidclient_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\qpid\qpid-cpp-1.38.0\src\windows\resources;E:\boost_1_68_0;E:\qpid\qpid-cpp-1.38.0\src;E:\qpid\qpid-cpp-1.38.0\src\..\include;E:\qpid\qpid-cpp-1.38.0\build\src;E:\qpid\qpid-cpp-1.38.0\build\src\..\include;E:\qpid\qpid-cpp-1.38.0\qpid-proton\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\qpid\qpid-cpp-1.38.0\src\windows\resources;E:\boost_1_68_0;E:\qpid\qpid-cpp-1.38.0\src;E:\qpid\qpid-cpp-1.38.0\src\..\include;E:\qpid\qpid-cpp-1.38.0\build\src;E:\qpid\qpid-cpp-1.38.0\build\src\..\include;E:\qpid\qpid-cpp-1.38.0\qpid-proton\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Debug\qpidcommond.lib;Debug\qpidtypesd.lib;Crypt32.lib;Secur32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>E:/boost_1_68_0/stage/lib;E:/boost_1_68_0/stage/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/qpid/qpid-cpp-1.38.0/build/src/Debug/qpidclientd.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/qpid/qpid-cpp-1.38.0/build/src/Debug/qpidclientd.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\qpid\qpid-cpp-1.38.0\src\windows\resources;E:\boost_1_68_0;E:\qpid\qpid-cpp-1.38.0\src;E:\qpid\qpid-cpp-1.38.0\src\..\include;E:\qpid\qpid-cpp-1.38.0\build\src;E:\qpid\qpid-cpp-1.38.0\build\src\..\include;E:\qpid\qpid-cpp-1.38.0\qpid-proton\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /w44996</AdditionalOptions>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4244;4800;4355;4267</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0502;BOOST_ALL_DYN_LINK;CMAKE_INTDIR="Release";qpidclient_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0502;BOOST_ALL_DYN_LINK;CMAKE_INTDIR=\"Release\";qpidclient_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\qpid\qpid-cpp-1.38.0\src\windows\resources;E:\boost_1_68_0;E:\qpid\qpid-cpp-1.38.0\src;E:\qpid\qpid-cpp-1.38.0\src\..\include;E:\qpid\qpid-cpp-1.38.0\build\src;E:\qpid\qpid-cpp-1.38.0\build\src\..\include;E:\qpid\qpid-cpp-1.38.0\qpid-proton\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\qpid\qpid-cpp-1.38.0\src\windows\resources;E:\boost_1_68_0;E:\qpid\qpid-cpp-1.38.0\src;E:\qpid\qpid-cpp-1.38.0\src\..\include;E:\qpid\qpid-cpp-1.38.0\build\src;E:\qpid\qpid-cpp-1.38.0\build\src\..\include;E:\qpid\qpid-cpp-1.38.0\qpid-proton\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Release\qpidcommon.lib;Release\qpidtypes.lib;Crypt32.lib;Secur32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>E:/boost_1_68_0/stage/lib;E:/boost_1_68_0/stage/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/qpid/qpid-cpp-1.38.0/build/src/Release/qpidclient.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/qpid/qpid-cpp-1.38.0/build/src/Release/qpidclient.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\qpid\qpid-cpp-1.38.0\src\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule E:/qpid/qpid-cpp-1.38.0/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+D:\cmake\bin\cmake.exe -SE:/qpid/qpid-cpp-1.38.0 -BE:/qpid/qpid-cpp-1.38.0/build --check-stamp-file E:/qpid/qpid-cpp-1.38.0/build/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/qpid/qpid-cpp-1.38.0/src/CMakeLists.txt;D:\cmake\share\cmake-3.13\Modules\CheckCXXSourceCompiles.cmake;D:\cmake\share\cmake-3.13\Modules\CheckFunctionExists.cmake;D:\cmake\share\cmake-3.13\Modules\CheckIncludeFile.cmake;D:\cmake\share\cmake-3.13\Modules\CheckIncludeFileCXX.cmake;D:\cmake\share\cmake-3.13\Modules\CheckIncludeFiles.cmake;D:\cmake\share\cmake-3.13\Modules\CheckLibraryExists.cmake;D:\cmake\share\cmake-3.13\Modules\CheckSymbolExists.cmake;D:\cmake\share\cmake-3.13\Modules\FindBoost.cmake;D:\cmake\share\cmake-3.13\Modules\FindDoxygen.cmake;D:\cmake\share\cmake-3.13\Modules\FindPackageHandleStandardArgs.cmake;D:\cmake\share\cmake-3.13\Modules\FindPackageMessage.cmake;D:\cmake\share\cmake-3.13\Modules\FindPkgConfig.cmake;D:\cmake\share\cmake-3.13\Modules\FindRuby.cmake;D:\cmake\share\cmake-3.13\Modules\FindThreads.cmake;E:\qpid\qpid-cpp-1.38.0\CMakeModules\CheckSizetDistinct.cmake;E:\qpid\qpid-cpp-1.38.0\CMakeModules\FindProton.cmake;E:\qpid\qpid-cpp-1.38.0\build\src\managementgen.cmake;E:\qpid\qpid-cpp-1.38.0\build\src\rubygen.cmake;E:\qpid\qpid-cpp-1.38.0\qpid-proton\ProtonConfig.cmake;E:\qpid\qpid-cpp-1.38.0\qpid-proton\ProtonConfigVersion.cmake;E:\qpid\qpid-cpp-1.38.0\src\CMakeLists.txt;E:\qpid\qpid-cpp-1.38.0\src\QpidConfig.cmake.in;E:\qpid\qpid-cpp-1.38.0\src\QpidConfigVersion.cmake.in;E:\qpid\qpid-cpp-1.38.0\src\amqp.cmake;E:\qpid\qpid-cpp-1.38.0\src\config.h.cmake;E:\qpid\qpid-cpp-1.38.0\src\legacystore.cmake;E:\qpid\qpid-cpp-1.38.0\src\linearstore.cmake;E:\qpid\qpid-cpp-1.38.0\src\qmf2.pc.in;E:\qpid\qpid-cpp-1.38.0\src\qpid.pc.in;E:\qpid\qpid-cpp-1.38.0\src\rdma.cmake;E:\qpid\qpid-cpp-1.38.0\src\versions.cmake;E:\qpid\qpid-cpp-1.38.0\src\windows\resources\template-resource.rc;E:\qpid\qpid-cpp-1.38.0\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\qpid\qpid-cpp-1.38.0\build\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule E:/qpid/qpid-cpp-1.38.0/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+D:\cmake\bin\cmake.exe -SE:/qpid/qpid-cpp-1.38.0 -BE:/qpid/qpid-cpp-1.38.0/build --check-stamp-file E:/qpid/qpid-cpp-1.38.0/build/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/qpid/qpid-cpp-1.38.0/src/CMakeLists.txt;D:\cmake\share\cmake-3.13\Modules\CheckCXXSourceCompiles.cmake;D:\cmake\share\cmake-3.13\Modules\CheckFunctionExists.cmake;D:\cmake\share\cmake-3.13\Modules\CheckIncludeFile.cmake;D:\cmake\share\cmake-3.13\Modules\CheckIncludeFileCXX.cmake;D:\cmake\share\cmake-3.13\Modules\CheckIncludeFiles.cmake;D:\cmake\share\cmake-3.13\Modules\CheckLibraryExists.cmake;D:\cmake\share\cmake-3.13\Modules\CheckSymbolExists.cmake;D:\cmake\share\cmake-3.13\Modules\FindBoost.cmake;D:\cmake\share\cmake-3.13\Modules\FindDoxygen.cmake;D:\cmake\share\cmake-3.13\Modules\FindPackageHandleStandardArgs.cmake;D:\cmake\share\cmake-3.13\Modules\FindPackageMessage.cmake;D:\cmake\share\cmake-3.13\Modules\FindPkgConfig.cmake;D:\cmake\share\cmake-3.13\Modules\FindRuby.cmake;D:\cmake\share\cmake-3.13\Modules\FindThreads.cmake;E:\qpid\qpid-cpp-1.38.0\CMakeModules\CheckSizetDistinct.cmake;E:\qpid\qpid-cpp-1.38.0\CMakeModules\FindProton.cmake;E:\qpid\qpid-cpp-1.38.0\build\src\managementgen.cmake;E:\qpid\qpid-cpp-1.38.0\build\src\rubygen.cmake;E:\qpid\qpid-cpp-1.38.0\qpid-proton\ProtonConfig.cmake;E:\qpid\qpid-cpp-1.38.0\qpid-proton\ProtonConfigVersion.cmake;E:\qpid\qpid-cpp-1.38.0\src\CMakeLists.txt;E:\qpid\qpid-cpp-1.38.0\src\QpidConfig.cmake.in;E:\qpid\qpid-cpp-1.38.0\src\QpidConfigVersion.cmake.in;E:\qpid\qpid-cpp-1.38.0\src\amqp.cmake;E:\qpid\qpid-cpp-1.38.0\src\config.h.cmake;E:\qpid\qpid-cpp-1.38.0\src\legacystore.cmake;E:\qpid\qpid-cpp-1.38.0\src\linearstore.cmake;E:\qpid\qpid-cpp-1.38.0\src\qmf2.pc.in;E:\qpid\qpid-cpp-1.38.0\src\qpid.pc.in;E:\qpid\qpid-cpp-1.38.0\src\rdma.cmake;E:\qpid\qpid-cpp-1.38.0\src\versions.cmake;E:\qpid\qpid-cpp-1.38.0\src\windows\resources\template-resource.rc;E:\qpid\qpid-cpp-1.38.0\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\qpid\qpid-cpp-1.38.0\build\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\include\qpid\client\no_keyword\AsyncSession_0_10.h" />
+    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\client\no_keyword\AsyncSession_0_10.cpp" />
+    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\include\qpid\client\no_keyword\Session_0_10.h" />
+    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\client\no_keyword\Session_0_10.cpp" />
+    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\include\qpid\client\arg.h" />
+    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\include\qpid\client\AsyncSession_0_10.h" />
+    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\include\qpid\client\Session_0_10.h" />
+    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\windows\ClientDllMain.cpp" />
+    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\windows\SslConnector.cpp" />
+    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\Bounds.cpp" />
+    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\Completion.cpp" />
+    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\CompletionImpl.cpp" />
+    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\Connection.cpp" />
+    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\ConnectionHandler.cpp" />
+    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\ConnectionImpl.cpp" />
+    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\ConnectionSettings.cpp" />
+    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\Connector.cpp" />
+    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\Demux.cpp" />
+    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\Dispatcher.cpp" />
+    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\FailoverManager.cpp" />
+    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\FailoverListener.cpp" />
+    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\Future.cpp" />
+    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\FutureCompletion.cpp" />
+    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\FutureResult.cpp" />
+    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\LoadPlugins.cpp" />
+    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\LocalQueue.cpp" />
+    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\LocalQueueImpl.cpp" />
+    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\Message.cpp" />
+    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\MessageImpl.cpp" />
+    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\MessageListener.cpp" />
+    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\MessageReplayTracker.cpp" />
+    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\QueueOptions.cpp" />
+    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\Results.cpp" />
+    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\SessionBase_0_10.cpp" />
+    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\SessionBase_0_10Access.h" />
+    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\ConnectionAccess.h" />
+    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\SessionImpl.cpp" />
+    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\StateManager.cpp" />
+    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\Subscription.cpp" />
+    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\SubscriptionImpl.cpp" />
+    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\SubscriptionManager.cpp" />
+    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\SubscriptionManagerImpl.cpp" />
+    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\TCPConnector.cpp" />
+    <ResourceCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\windows\resources\qpidclient-resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\qpid\qpid-cpp-1.38.0\build\ZERO_CHECK.vcxproj">
+      <Project>{8ECD8C8E-7C92-37B1-88C9-12DD6E607A0A}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpidcommon.vcxproj">
+      <Project>{770FAD14-E396-3350-BA48-2BF21CDAAA9D}</Project>
+      <Name>qpidcommon</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpidtypes.vcxproj">
+      <Project>{A2D3A57C-A4E1-3690-9351-4AB1D89F0330}</Project>
+      <Name>qpidtypes</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

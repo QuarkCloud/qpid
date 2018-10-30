@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include=".\qpid\broker\amqp\Authorise.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\qpid\broker\amqp\BrokerContext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\qpid\broker\amqp\Connection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\qpid\broker\amqp\DataReader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\qpid\broker\amqp\Domain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\qpid\broker\amqp\Exception.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\qpid\broker\amqp\Filter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\qpid\broker\amqp\Header.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\qpid\broker\amqp\Incoming.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\qpid\broker\amqp\Interconnect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\qpid\broker\amqp\Interconnects.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\qpid\broker\amqp\ManagedConnection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\qpid\broker\amqp\ManagedSession.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\qpid\broker\amqp\ManagedIncomingLink.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\qpid\broker\amqp\ManagedOutgoingLink.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\qpid\broker\amqp\Message.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\qpid\broker\amqp\NodePolicy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\qpid\broker\amqp\NodeProperties.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\qpid\broker\amqp\Outgoing.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\qpid\broker\amqp\ProtocolPlugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\qpid\broker\amqp\Relay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\qpid\broker\amqp\Sasl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\qpid\broker\amqp\SaslClient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\qpid\broker\amqp\Session.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\qpid\broker\amqp\Topic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\qpid\broker\amqp\Translation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include=".\qpid\broker\amqp\Authorise.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\qpid\broker\amqp\BrokerContext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\qpid\broker\amqp\Connection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\qpid\broker\amqp\DataReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\qpid\broker\amqp\Domain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\qpid\broker\amqp\Exception.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\qpid\broker\amqp\Filter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\qpid\broker\amqp\Header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\qpid\broker\amqp\Incoming.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\qpid\broker\amqp\Interconnect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\qpid\broker\amqp\Interconnects.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\qpid\broker\amqp\ManagedConnection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\qpid\broker\amqp\ManagedSession.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\qpid\broker\amqp\ManagedIncomingLink.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\qpid\broker\amqp\ManagedOutgoingLink.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\qpid\broker\amqp\Message.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\qpid\broker\amqp\NodePolicy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\qpid\broker\amqp\NodeProperties.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\qpid\broker\amqp\Outgoing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\qpid\broker\amqp\Relay.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\qpid\broker\amqp\Sasl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\qpid\broker\amqp\SaslClient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\qpid\broker\amqp\Session.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\qpid\broker\amqp\Topic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\qpid\broker\amqp\Translation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{DD29CA2B-18E8-3D6C-9FBF-922F7EC60AF3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{200479CF-CC1F-3FDD-B530-F3B5336BC87F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

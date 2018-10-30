@@ -5,6 +5,11 @@ VisualStudioVersion = 15.0.27130.2020
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "qpid-proton-core", "proton\qpid-proton-core.vcxproj", "{0BDF7924-F6A0-36A6-A7E8-12B48CD9B51E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "amqp", "qpid-cpp\amqp.vcxproj", "{2F96213C-546E-39EE-993E-D423BD357A50}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0BDF7924-F6A0-36A6-A7E8-12B48CD9B51E} = {0BDF7924-F6A0-36A6-A7E8-12B48CD9B51E}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -15,6 +20,10 @@ Global
 		{0BDF7924-F6A0-36A6-A7E8-12B48CD9B51E}.Debug|x86.Build.0 = Debug|Win32
 		{0BDF7924-F6A0-36A6-A7E8-12B48CD9B51E}.Release|x86.ActiveCfg = Release|Win32
 		{0BDF7924-F6A0-36A6-A7E8-12B48CD9B51E}.Release|x86.Build.0 = Release|Win32
+		{2F96213C-546E-39EE-993E-D423BD357A50}.Debug|x86.ActiveCfg = Debug|Win32
+		{2F96213C-546E-39EE-993E-D423BD357A50}.Debug|x86.Build.0 = Debug|Win32
+		{2F96213C-546E-39EE-993E-D423BD357A50}.Release|x86.ActiveCfg = Release|Win32
+		{2F96213C-546E-39EE-993E-D423BD357A50}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
