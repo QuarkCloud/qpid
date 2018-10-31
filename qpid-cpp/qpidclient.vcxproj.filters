@@ -1,145 +1,137 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\client\no_keyword\AsyncSession_0_10.cpp">
+    <ClCompile Include=".\qpid\client\no_keyword\AsyncSession_0_10.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\client\no_keyword\Session_0_10.cpp">
+    <ClCompile Include=".\qpid\client\no_keyword\Session_0_10.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\windows\ClientDllMain.cpp">
+    <ClCompile Include=".\qpid\client\windows\ClientDllMain.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\windows\SslConnector.cpp">
+    <ClCompile Include=".\qpid\client\windows\SslConnector.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\Bounds.cpp">
+    <ClCompile Include=".\qpid\client\Bounds.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\Completion.cpp">
+    <ClCompile Include=".\qpid\client\Completion.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\CompletionImpl.cpp">
+    <ClCompile Include=".\qpid\client\CompletionImpl.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\Connection.cpp">
+    <ClCompile Include=".\qpid\client\Connection.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\ConnectionHandler.cpp">
+    <ClCompile Include=".\qpid\client\ConnectionHandler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\ConnectionImpl.cpp">
+    <ClCompile Include=".\qpid\client\ConnectionImpl.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\ConnectionSettings.cpp">
+    <ClCompile Include=".\qpid\client\ConnectionSettings.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\Connector.cpp">
+    <ClCompile Include=".\qpid\client\Connector.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\Demux.cpp">
+    <ClCompile Include=".\qpid\client\Demux.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\Dispatcher.cpp">
+    <ClCompile Include=".\qpid\client\Dispatcher.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\FailoverManager.cpp">
+    <ClCompile Include=".\qpid\client\FailoverManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\FailoverListener.cpp">
+    <ClCompile Include=".\qpid\client\FailoverListener.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\Future.cpp">
+    <ClCompile Include=".\qpid\client\Future.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\FutureCompletion.cpp">
+    <ClCompile Include=".\qpid\client\FutureCompletion.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\FutureResult.cpp">
+    <ClCompile Include=".\qpid\client\FutureResult.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\LoadPlugins.cpp">
+    <ClCompile Include=".\qpid\client\LoadPlugins.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\LocalQueue.cpp">
+    <ClCompile Include=".\qpid\client\LocalQueue.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\LocalQueueImpl.cpp">
+    <ClCompile Include=".\qpid\client\LocalQueueImpl.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\Message.cpp">
+    <ClCompile Include=".\qpid\client\Message.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\MessageImpl.cpp">
+    <ClCompile Include=".\qpid\client\MessageImpl.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\MessageListener.cpp">
+    <ClCompile Include=".\qpid\client\MessageListener.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\MessageReplayTracker.cpp">
+    <ClCompile Include=".\qpid\client\MessageReplayTracker.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\QueueOptions.cpp">
+    <ClCompile Include=".\qpid\client\QueueOptions.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\Results.cpp">
+    <ClCompile Include=".\qpid\client\Results.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\SessionBase_0_10.cpp">
+    <ClCompile Include=".\qpid\client\SessionBase_0_10.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\SessionImpl.cpp">
+    <ClCompile Include=".\qpid\client\SessionImpl.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\StateManager.cpp">
+    <ClCompile Include=".\qpid\client\StateManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\Subscription.cpp">
+    <ClCompile Include=".\qpid\client\Subscription.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\SubscriptionImpl.cpp">
+    <ClCompile Include=".\qpid\client\SubscriptionImpl.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\SubscriptionManager.cpp">
+    <ClCompile Include=".\qpid\client\SubscriptionManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\SubscriptionManagerImpl.cpp">
+    <ClCompile Include=".\qpid\client\SubscriptionManagerImpl.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\TCPConnector.cpp">
+    <ClCompile Include=".\qpid\client\TCPConnector.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\include\qpid\client\no_keyword\AsyncSession_0_10.h">
+    <ClInclude Include="..\include\qpid\client\no_keyword\AsyncSession_0_10.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\include\qpid\client\no_keyword\Session_0_10.h">
+    <ClInclude Include="..\include\qpid\client\no_keyword\Session_0_10.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\include\qpid\client\arg.h">
+    <ClInclude Include="..\include\qpid\client\arg.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\include\qpid\client\AsyncSession_0_10.h">
+    <ClInclude Include="..\include\qpid\client\AsyncSession_0_10.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\include\qpid\client\Session_0_10.h">
+    <ClInclude Include="..\include\qpid\client\Session_0_10.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\SessionBase_0_10Access.h">
+    <ClInclude Include=".\qpid\client\SessionBase_0_10Access.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\ConnectionAccess.h">
+    <ClInclude Include=".\qpid\client\ConnectionAccess.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <CustomBuild Include="E:\qpid\qpid-cpp-1.38.0\src\CMakeLists.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\windows\resources\qpidclient-resource.rc">
-      <Filter>Source Files</Filter>
-    </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header Files">
