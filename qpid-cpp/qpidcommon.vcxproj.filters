@@ -1,1060 +1,1052 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\reply_exceptions.cpp">
+    <ClCompile Include=".\qpid\framing\reply_exceptions.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\TypeCode.cpp">
+    <ClCompile Include=".\qpid\framing\TypeCode.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\MethodBodyDefaultVisitor.cpp">
+    <ClCompile Include=".\qpid\framing\MethodBodyDefaultVisitor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\MethodBodyFactory.cpp">
+    <ClCompile Include=".\qpid\framing\MethodBodyFactory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\ClientInvoker.cpp">
+    <ClCompile Include=".\qpid\framing\ClientInvoker.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\ServerInvoker.cpp">
+    <ClCompile Include=".\qpid\framing\ServerInvoker.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\AllInvoker.cpp">
+    <ClCompile Include=".\qpid\framing\AllInvoker.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\AMQP_ClientProxy.cpp">
+    <ClCompile Include=".\qpid\framing\AMQP_ClientProxy.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\AMQP_ServerProxy.cpp">
+    <ClCompile Include=".\qpid\framing\AMQP_ServerProxy.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\AMQP_AllProxy.cpp">
+    <ClCompile Include=".\qpid\framing\AMQP_AllProxy.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\Header.cpp">
+    <ClCompile Include=".\qpid\framing\Header.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\DeliveryProperties.cpp">
+    <ClCompile Include=".\qpid\framing\DeliveryProperties.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\FragmentProperties.cpp">
+    <ClCompile Include=".\qpid\framing\FragmentProperties.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\ReplyTo.cpp">
+    <ClCompile Include=".\qpid\framing\ReplyTo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\MessageProperties.cpp">
+    <ClCompile Include=".\qpid\framing\MessageProperties.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\MessageAcquireResult.cpp">
+    <ClCompile Include=".\qpid\framing\MessageAcquireResult.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\MessageResumeResult.cpp">
+    <ClCompile Include=".\qpid\framing\MessageResumeResult.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\XaResult.cpp">
+    <ClCompile Include=".\qpid\framing\XaResult.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\Xid.cpp">
+    <ClCompile Include=".\qpid\framing\Xid.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\DtxGetTimeoutResult.cpp">
+    <ClCompile Include=".\qpid\framing\DtxGetTimeoutResult.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\DtxRecoverResult.cpp">
+    <ClCompile Include=".\qpid\framing\DtxRecoverResult.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\ExchangeQueryResult.cpp">
+    <ClCompile Include=".\qpid\framing\ExchangeQueryResult.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\ExchangeBoundResult.cpp">
+    <ClCompile Include=".\qpid\framing\ExchangeBoundResult.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\QueueQueryResult.cpp">
+    <ClCompile Include=".\qpid\framing\QueueQueryResult.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\FileProperties.cpp">
+    <ClCompile Include=".\qpid\framing\FileProperties.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\StreamProperties.cpp">
+    <ClCompile Include=".\qpid\framing\StreamProperties.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\ConnectionStartBody.cpp">
+    <ClCompile Include=".\qpid\framing\ConnectionStartBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\ConnectionStartOkBody.cpp">
+    <ClCompile Include=".\qpid\framing\ConnectionStartOkBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\ConnectionSecureBody.cpp">
+    <ClCompile Include=".\qpid\framing\ConnectionSecureBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\ConnectionSecureOkBody.cpp">
+    <ClCompile Include=".\qpid\framing\ConnectionSecureOkBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\ConnectionTuneBody.cpp">
+    <ClCompile Include=".\qpid\framing\ConnectionTuneBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\ConnectionTuneOkBody.cpp">
+    <ClCompile Include=".\qpid\framing\ConnectionTuneOkBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\ConnectionOpenBody.cpp">
+    <ClCompile Include=".\qpid\framing\ConnectionOpenBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\ConnectionOpenOkBody.cpp">
+    <ClCompile Include=".\qpid\framing\ConnectionOpenOkBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\ConnectionRedirectBody.cpp">
+    <ClCompile Include=".\qpid\framing\ConnectionRedirectBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\ConnectionHeartbeatBody.cpp">
+    <ClCompile Include=".\qpid\framing\ConnectionHeartbeatBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\ConnectionCloseBody.cpp">
+    <ClCompile Include=".\qpid\framing\ConnectionCloseBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\ConnectionCloseOkBody.cpp">
+    <ClCompile Include=".\qpid\framing\ConnectionCloseOkBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\SessionAttachBody.cpp">
+    <ClCompile Include=".\qpid\framing\SessionAttachBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\SessionAttachedBody.cpp">
+    <ClCompile Include=".\qpid\framing\SessionAttachedBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\SessionDetachBody.cpp">
+    <ClCompile Include=".\qpid\framing\SessionDetachBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\SessionDetachedBody.cpp">
+    <ClCompile Include=".\qpid\framing\SessionDetachedBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\SessionRequestTimeoutBody.cpp">
+    <ClCompile Include=".\qpid\framing\SessionRequestTimeoutBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\SessionTimeoutBody.cpp">
+    <ClCompile Include=".\qpid\framing\SessionTimeoutBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\SessionCommandPointBody.cpp">
+    <ClCompile Include=".\qpid\framing\SessionCommandPointBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\SessionExpectedBody.cpp">
+    <ClCompile Include=".\qpid\framing\SessionExpectedBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\SessionConfirmedBody.cpp">
+    <ClCompile Include=".\qpid\framing\SessionConfirmedBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\SessionCompletedBody.cpp">
+    <ClCompile Include=".\qpid\framing\SessionCompletedBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\SessionKnownCompletedBody.cpp">
+    <ClCompile Include=".\qpid\framing\SessionKnownCompletedBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\SessionFlushBody.cpp">
+    <ClCompile Include=".\qpid\framing\SessionFlushBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\SessionGapBody.cpp">
+    <ClCompile Include=".\qpid\framing\SessionGapBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\ExecutionSyncBody.cpp">
+    <ClCompile Include=".\qpid\framing\ExecutionSyncBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\ExecutionResultBody.cpp">
+    <ClCompile Include=".\qpid\framing\ExecutionResultBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\ExecutionExceptionBody.cpp">
+    <ClCompile Include=".\qpid\framing\ExecutionExceptionBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\MessageTransferBody.cpp">
+    <ClCompile Include=".\qpid\framing\MessageTransferBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\MessageAcceptBody.cpp">
+    <ClCompile Include=".\qpid\framing\MessageAcceptBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\MessageRejectBody.cpp">
+    <ClCompile Include=".\qpid\framing\MessageRejectBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\MessageReleaseBody.cpp">
+    <ClCompile Include=".\qpid\framing\MessageReleaseBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\MessageAcquireBody.cpp">
+    <ClCompile Include=".\qpid\framing\MessageAcquireBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\MessageResumeBody.cpp">
+    <ClCompile Include=".\qpid\framing\MessageResumeBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\MessageSubscribeBody.cpp">
+    <ClCompile Include=".\qpid\framing\MessageSubscribeBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\MessageCancelBody.cpp">
+    <ClCompile Include=".\qpid\framing\MessageCancelBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\MessageSetFlowModeBody.cpp">
+    <ClCompile Include=".\qpid\framing\MessageSetFlowModeBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\MessageFlowBody.cpp">
+    <ClCompile Include=".\qpid\framing\MessageFlowBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\MessageFlushBody.cpp">
+    <ClCompile Include=".\qpid\framing\MessageFlushBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\MessageStopBody.cpp">
+    <ClCompile Include=".\qpid\framing\MessageStopBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\TxSelectBody.cpp">
+    <ClCompile Include=".\qpid\framing\TxSelectBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\TxCommitBody.cpp">
+    <ClCompile Include=".\qpid\framing\TxCommitBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\TxRollbackBody.cpp">
+    <ClCompile Include=".\qpid\framing\TxRollbackBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\DtxSelectBody.cpp">
+    <ClCompile Include=".\qpid\framing\DtxSelectBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\DtxStartBody.cpp">
+    <ClCompile Include=".\qpid\framing\DtxStartBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\DtxEndBody.cpp">
+    <ClCompile Include=".\qpid\framing\DtxEndBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\DtxCommitBody.cpp">
+    <ClCompile Include=".\qpid\framing\DtxCommitBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\DtxForgetBody.cpp">
+    <ClCompile Include=".\qpid\framing\DtxForgetBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\DtxGetTimeoutBody.cpp">
+    <ClCompile Include=".\qpid\framing\DtxGetTimeoutBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\DtxPrepareBody.cpp">
+    <ClCompile Include=".\qpid\framing\DtxPrepareBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\DtxRecoverBody.cpp">
+    <ClCompile Include=".\qpid\framing\DtxRecoverBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\DtxRollbackBody.cpp">
+    <ClCompile Include=".\qpid\framing\DtxRollbackBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\DtxSetTimeoutBody.cpp">
+    <ClCompile Include=".\qpid\framing\DtxSetTimeoutBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\ExchangeDeclareBody.cpp">
+    <ClCompile Include=".\qpid\framing\ExchangeDeclareBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\ExchangeDeleteBody.cpp">
+    <ClCompile Include=".\qpid\framing\ExchangeDeleteBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\ExchangeQueryBody.cpp">
+    <ClCompile Include=".\qpid\framing\ExchangeQueryBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\ExchangeBindBody.cpp">
+    <ClCompile Include=".\qpid\framing\ExchangeBindBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\ExchangeUnbindBody.cpp">
+    <ClCompile Include=".\qpid\framing\ExchangeUnbindBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\ExchangeBoundBody.cpp">
+    <ClCompile Include=".\qpid\framing\ExchangeBoundBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\QueueDeclareBody.cpp">
+    <ClCompile Include=".\qpid\framing\QueueDeclareBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\QueueDeleteBody.cpp">
+    <ClCompile Include=".\qpid\framing\QueueDeleteBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\QueuePurgeBody.cpp">
+    <ClCompile Include=".\qpid\framing\QueuePurgeBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\QueueQueryBody.cpp">
+    <ClCompile Include=".\qpid\framing\QueueQueryBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\FileQosBody.cpp">
+    <ClCompile Include=".\qpid\framing\FileQosBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\FileQosOkBody.cpp">
+    <ClCompile Include=".\qpid\framing\FileQosOkBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\FileConsumeBody.cpp">
+    <ClCompile Include=".\qpid\framing\FileConsumeBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\FileConsumeOkBody.cpp">
+    <ClCompile Include=".\qpid\framing\FileConsumeOkBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\FileCancelBody.cpp">
+    <ClCompile Include=".\qpid\framing\FileCancelBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\FileOpenBody.cpp">
+    <ClCompile Include=".\qpid\framing\FileOpenBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\FileOpenOkBody.cpp">
+    <ClCompile Include=".\qpid\framing\FileOpenOkBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\FileStageBody.cpp">
+    <ClCompile Include=".\qpid\framing\FileStageBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\FilePublishBody.cpp">
+    <ClCompile Include=".\qpid\framing\FilePublishBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\FileReturnBody.cpp">
+    <ClCompile Include=".\qpid\framing\FileReturnBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\FileDeliverBody.cpp">
+    <ClCompile Include=".\qpid\framing\FileDeliverBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\FileAckBody.cpp">
+    <ClCompile Include=".\qpid\framing\FileAckBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\FileRejectBody.cpp">
+    <ClCompile Include=".\qpid\framing\FileRejectBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\StreamQosBody.cpp">
+    <ClCompile Include=".\qpid\framing\StreamQosBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\StreamQosOkBody.cpp">
+    <ClCompile Include=".\qpid\framing\StreamQosOkBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\StreamConsumeBody.cpp">
+    <ClCompile Include=".\qpid\framing\StreamConsumeBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\StreamConsumeOkBody.cpp">
+    <ClCompile Include=".\qpid\framing\StreamConsumeOkBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\StreamCancelBody.cpp">
+    <ClCompile Include=".\qpid\framing\StreamCancelBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\StreamPublishBody.cpp">
+    <ClCompile Include=".\qpid\framing\StreamPublishBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\StreamReturnBody.cpp">
+    <ClCompile Include=".\qpid\framing\StreamReturnBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\StreamDeliverBody.cpp">
+    <ClCompile Include=".\qpid\framing\StreamDeliverBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\log\windows\SinkOptions.cpp">
+    <ClCompile Include=".\qpid\log\windows\SinkOptions.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\sys\windows\AsynchIO.cpp">
+    <ClCompile Include=".\qpid\sys\windows\AsynchIO.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\sys\windows\Path.cpp">
+    <ClCompile Include=".\qpid\sys\windows\Path.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\sys\windows\FileSysDir.cpp">
+    <ClCompile Include=".\qpid\sys\windows\FileSysDir.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\sys\windows\IocpPoller.cpp">
+    <ClCompile Include=".\qpid\sys\windows\IocpPoller.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\sys\windows\IOHandle.cpp">
+    <ClCompile Include=".\qpid\sys\windows\IOHandle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\sys\windows\LockFile.cpp">
+    <ClCompile Include=".\qpid\sys\windows\LockFile.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\sys\windows\MemoryMappedFile.cpp">
+    <ClCompile Include=".\qpid\sys\windows\MemoryMappedFile.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\sys\windows\PipeHandle.cpp">
+    <ClCompile Include=".\qpid\sys\windows\PipeHandle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\sys\windows\PollableCondition.cpp">
+    <ClCompile Include=".\qpid\sys\windows\PollableCondition.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\sys\windows\Shlib.cpp">
+    <ClCompile Include=".\qpid\sys\windows\Shlib.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\sys\windows\WinSocket.cpp">
+    <ClCompile Include=".\qpid\sys\windows\WinSocket.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\sys\windows\SocketAddress.cpp">
+    <ClCompile Include=".\qpid\sys\windows\SocketAddress.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\sys\windows\StrError.cpp">
+    <ClCompile Include=".\qpid\sys\windows\StrError.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\sys\windows\SystemInfo.cpp">
+    <ClCompile Include=".\qpid\sys\windows\SystemInfo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\sys\windows\Thread.cpp">
+    <ClCompile Include=".\qpid\sys\windows\Thread.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\sys\windows\Time.cpp">
+    <ClCompile Include=".\qpid\sys\windows\Time.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\client\windows\SaslFactory.cpp">
+    <ClCompile Include=".\qpid\client\windows\SaslFactory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\sys\windows\SslAsynchIO.cpp">
+    <ClCompile Include=".\qpid\sys\windows\SslAsynchIO.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\sys\windows\SslCredential.cpp">
+    <ClCompile Include=".\qpid\sys\windows\SslCredential.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\sys\windows\util.cpp">
+    <ClCompile Include=".\qpid\sys\windows\util.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\assert.cpp">
+    <ClCompile Include=".\qpid\assert.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\AclHost.cpp">
+    <ClCompile Include=".\qpid\AclHost.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\Address.cpp">
+    <ClCompile Include=".\qpid\Address.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\DataDir.cpp">
+    <ClCompile Include=".\qpid\DataDir.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\Exception.cpp">
+    <ClCompile Include=".\qpid\Exception.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\Modules.cpp">
+    <ClCompile Include=".\qpid\Modules.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\Options.cpp">
+    <ClCompile Include=".\qpid\Options.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\Plugin.cpp">
+    <ClCompile Include=".\qpid\Plugin.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\RefCountedBuffer.cpp">
+    <ClCompile Include=".\qpid\RefCountedBuffer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\SessionState.cpp">
+    <ClCompile Include=".\qpid\SessionState.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\SessionId.cpp">
+    <ClCompile Include=".\qpid\SessionId.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\StringUtils.cpp">
+    <ClCompile Include=".\qpid\StringUtils.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\Url.cpp">
+    <ClCompile Include=".\qpid\Url.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\UrlArray.cpp">
+    <ClCompile Include=".\qpid\UrlArray.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\NullSaslClient.cpp">
+    <ClCompile Include=".\qpid\NullSaslClient.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\NullSaslServer.cpp">
+    <ClCompile Include=".\qpid\NullSaslServer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\amqp_0_10\SessionHandler.cpp">
+    <ClCompile Include=".\qpid\amqp_0_10\SessionHandler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\framing\AccumulatedAck.cpp">
+    <ClCompile Include=".\qpid\framing\AccumulatedAck.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\framing\AMQBody.cpp">
+    <ClCompile Include=".\qpid\framing\AMQBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\framing\AMQMethodBody.cpp">
+    <ClCompile Include=".\qpid\framing\AMQMethodBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\framing\AMQContentBody.cpp">
+    <ClCompile Include=".\qpid\framing\AMQContentBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\framing\AMQFrame.cpp">
+    <ClCompile Include=".\qpid\framing\AMQFrame.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\framing\AMQHeaderBody.cpp">
+    <ClCompile Include=".\qpid\framing\AMQHeaderBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\framing\AMQHeartbeatBody.cpp">
+    <ClCompile Include=".\qpid\framing\AMQHeartbeatBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\framing\Array.cpp">
+    <ClCompile Include=".\qpid\framing\Array.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\framing\Buffer.cpp">
+    <ClCompile Include=".\qpid\framing\Buffer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\framing\FieldTable.cpp">
+    <ClCompile Include=".\qpid\framing\FieldTable.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\framing\FieldValue.cpp">
+    <ClCompile Include=".\qpid\framing\FieldValue.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\framing\FrameSet.cpp">
+    <ClCompile Include=".\qpid\framing\FrameSet.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\framing\FrameDecoder.cpp">
+    <ClCompile Include=".\qpid\framing\FrameDecoder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\framing\List.cpp">
+    <ClCompile Include=".\qpid\framing\List.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\framing\ProtocolInitiation.cpp">
+    <ClCompile Include=".\qpid\framing\ProtocolInitiation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\framing\ProtocolVersion.cpp">
+    <ClCompile Include=".\qpid\framing\ProtocolVersion.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\framing\SendContent.cpp">
+    <ClCompile Include=".\qpid\framing\SendContent.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\framing\SequenceNumber.cpp">
+    <ClCompile Include=".\qpid\framing\SequenceNumber.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\framing\SequenceNumberSet.cpp">
+    <ClCompile Include=".\qpid\framing\SequenceNumberSet.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\framing\SequenceSet.cpp">
+    <ClCompile Include=".\qpid\framing\SequenceSet.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\framing\Proxy.cpp">
+    <ClCompile Include=".\qpid\framing\Proxy.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\framing\Uuid.cpp">
+    <ClCompile Include=".\qpid\framing\Uuid.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\framing\TransferContent.cpp">
+    <ClCompile Include=".\qpid\framing\TransferContent.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\log\Logger.cpp">
+    <ClCompile Include=".\qpid\log\Logger.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\log\Options.cpp">
+    <ClCompile Include=".\qpid\log\Options.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\log\OstreamOutput.cpp">
+    <ClCompile Include=".\qpid\log\OstreamOutput.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\log\Selector.cpp">
+    <ClCompile Include=".\qpid\log\Selector.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\log\Statement.cpp">
+    <ClCompile Include=".\qpid\log\Statement.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\management\Buffer.cpp">
+    <ClCompile Include=".\qpid\management\Buffer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\management\ConnectionSettings.cpp">
+    <ClCompile Include=".\qpid\management\ConnectionSettings.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\management\Mutex.cpp">
+    <ClCompile Include=".\qpid\management\Mutex.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\management\Manageable.cpp">
+    <ClCompile Include=".\qpid\management\Manageable.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\management\ManagementObject.cpp">
+    <ClCompile Include=".\qpid\management\ManagementObject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\sys\AggregateOutput.cpp">
+    <ClCompile Include=".\qpid\sys\AggregateOutput.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\sys\AsynchIOHandler.cpp">
+    <ClCompile Include=".\qpid\sys\AsynchIOHandler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\sys\Dispatcher.cpp">
+    <ClCompile Include=".\qpid\sys\Dispatcher.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\sys\DispatchHandle.cpp">
+    <ClCompile Include=".\qpid\sys\DispatchHandle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\sys\Runnable.cpp">
+    <ClCompile Include=".\qpid\sys\Runnable.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\sys\Shlib.cpp">
+    <ClCompile Include=".\qpid\sys\Shlib.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\sys\Timer.cpp">
+    <ClCompile Include=".\qpid\sys\Timer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\sys\TimerWarnings.cpp">
+    <ClCompile Include=".\qpid\sys\TimerWarnings.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\amqp_0_10\Codecs.cpp">
+    <ClCompile Include=".\qpid\amqp_0_10\Codecs.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\amqp\CharSequence.cpp">
+    <ClCompile Include=".\qpid\amqp\CharSequence.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\amqp\DataBuilder.cpp">
+    <ClCompile Include=".\qpid\amqp\DataBuilder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\amqp\Decoder.cpp">
+    <ClCompile Include=".\qpid\amqp\Decoder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\amqp\Descriptor.cpp">
+    <ClCompile Include=".\qpid\amqp\Descriptor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\amqp\Encoder.cpp">
+    <ClCompile Include=".\qpid\amqp\Encoder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\amqp\ListBuilder.cpp">
+    <ClCompile Include=".\qpid\amqp\ListBuilder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\amqp\MapEncoder.cpp">
+    <ClCompile Include=".\qpid\amqp\MapEncoder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\amqp\MapSizeCalculator.cpp">
+    <ClCompile Include=".\qpid\amqp\MapSizeCalculator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\amqp\MapBuilder.cpp">
+    <ClCompile Include=".\qpid\amqp\MapBuilder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\amqp\MapReader.cpp">
+    <ClCompile Include=".\qpid\amqp\MapReader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\amqp\MessageEncoder.cpp">
+    <ClCompile Include=".\qpid\amqp\MessageEncoder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\amqp\MessageId.cpp">
+    <ClCompile Include=".\qpid\amqp\MessageId.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\amqp\MessageReader.cpp">
+    <ClCompile Include=".\qpid\amqp\MessageReader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\amqp\Sasl.cpp">
+    <ClCompile Include=".\qpid\amqp\Sasl.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\amqp\SaslClient.cpp">
+    <ClCompile Include=".\qpid\amqp\SaslClient.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\amqp\SaslServer.cpp">
+    <ClCompile Include=".\qpid\amqp\SaslServer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\messaging\amqp\Transport.cpp">
+    <ClCompile Include=".\qpid\messaging\amqp\Transport.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\sys\MemStat.cpp">
+    <ClCompile Include=".\qpid\sys\MemStat.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\all_method_bodies.h">
+    <ClInclude Include=".\qpid\framing\all_method_bodies.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\include\qpid\framing\constants.h">
+    <ClInclude Include="..\include\qpid\framing\constants.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\include\qpid\framing\enum.h">
+    <ClInclude Include="..\include\qpid\framing\enum.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\include\qpid\framing\reply_exceptions.h">
+    <ClInclude Include="..\include\qpid\framing\reply_exceptions.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\include\qpid\framing\TypeCode.h">
+    <ClInclude Include="..\include\qpid\framing\TypeCode.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\frame_body_lists.h">
+    <ClInclude Include=".\qpid\framing\frame_body_lists.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\MethodBodyConstVisitor.h">
+    <ClInclude Include=".\qpid\framing\MethodBodyConstVisitor.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\MethodBodyDefaultVisitor.h">
+    <ClInclude Include=".\qpid\framing\MethodBodyDefaultVisitor.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\AMQP_ClientOperations.h">
+    <ClInclude Include=".\qpid\framing\AMQP_ClientOperations.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\AMQP_ServerOperations.h">
+    <ClInclude Include=".\qpid\framing\AMQP_ServerOperations.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\AMQP_AllOperations.h">
+    <ClInclude Include=".\qpid\framing\AMQP_AllOperations.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\ClientInvoker.h">
+    <ClInclude Include=".\qpid\framing\ClientInvoker.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\ServerInvoker.h">
+    <ClInclude Include=".\qpid\framing\ServerInvoker.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\AllInvoker.h">
+    <ClInclude Include=".\qpid\framing\AllInvoker.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\AMQP_ClientProxy.h">
+    <ClInclude Include=".\qpid\framing\AMQP_ClientProxy.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\AMQP_ServerProxy.h">
+    <ClInclude Include=".\qpid\framing\AMQP_ServerProxy.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\AMQP_AllProxy.h">
+    <ClInclude Include=".\qpid\framing\AMQP_AllProxy.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\include\qpid\framing\Header.h">
+    <ClInclude Include="..\include\qpid\framing\Header.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\include\qpid\framing\DeliveryProperties.h">
+    <ClInclude Include="..\include\qpid\framing\DeliveryProperties.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\include\qpid\framing\FragmentProperties.h">
+    <ClInclude Include="..\include\qpid\framing\FragmentProperties.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\include\qpid\framing\ReplyTo.h">
+    <ClInclude Include="..\include\qpid\framing\ReplyTo.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\include\qpid\framing\MessageProperties.h">
+    <ClInclude Include="..\include\qpid\framing\MessageProperties.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\include\qpid\framing\MessageAcquireResult.h">
+    <ClInclude Include="..\include\qpid\framing\MessageAcquireResult.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\include\qpid\framing\MessageResumeResult.h">
+    <ClInclude Include="..\include\qpid\framing\MessageResumeResult.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\include\qpid\framing\XaResult.h">
+    <ClInclude Include="..\include\qpid\framing\XaResult.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\include\qpid\framing\Xid.h">
+    <ClInclude Include="..\include\qpid\framing\Xid.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\include\qpid\framing\DtxGetTimeoutResult.h">
+    <ClInclude Include="..\include\qpid\framing\DtxGetTimeoutResult.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\include\qpid\framing\DtxRecoverResult.h">
+    <ClInclude Include="..\include\qpid\framing\DtxRecoverResult.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\include\qpid\framing\ExchangeQueryResult.h">
+    <ClInclude Include="..\include\qpid\framing\ExchangeQueryResult.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\include\qpid\framing\ExchangeBoundResult.h">
+    <ClInclude Include="..\include\qpid\framing\ExchangeBoundResult.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\include\qpid\framing\QueueQueryResult.h">
+    <ClInclude Include="..\include\qpid\framing\QueueQueryResult.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\include\qpid\framing\FileProperties.h">
+    <ClInclude Include="..\include\qpid\framing\FileProperties.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\include\qpid\framing\StreamProperties.h">
+    <ClInclude Include="..\include\qpid\framing\StreamProperties.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\ConnectionStartBody.h">
+    <ClInclude Include=".\qpid\framing\ConnectionStartBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\ConnectionStartOkBody.h">
+    <ClInclude Include=".\qpid\framing\ConnectionStartOkBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\ConnectionSecureBody.h">
+    <ClInclude Include=".\qpid\framing\ConnectionSecureBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\ConnectionSecureOkBody.h">
+    <ClInclude Include=".\qpid\framing\ConnectionSecureOkBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\ConnectionTuneBody.h">
+    <ClInclude Include=".\qpid\framing\ConnectionTuneBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\ConnectionTuneOkBody.h">
+    <ClInclude Include=".\qpid\framing\ConnectionTuneOkBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\ConnectionOpenBody.h">
+    <ClInclude Include=".\qpid\framing\ConnectionOpenBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\ConnectionOpenOkBody.h">
+    <ClInclude Include=".\qpid\framing\ConnectionOpenOkBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\ConnectionRedirectBody.h">
+    <ClInclude Include=".\qpid\framing\ConnectionRedirectBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\ConnectionHeartbeatBody.h">
+    <ClInclude Include=".\qpid\framing\ConnectionHeartbeatBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\ConnectionCloseBody.h">
+    <ClInclude Include=".\qpid\framing\ConnectionCloseBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\ConnectionCloseOkBody.h">
+    <ClInclude Include=".\qpid\framing\ConnectionCloseOkBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\SessionAttachBody.h">
+    <ClInclude Include=".\qpid\framing\SessionAttachBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\SessionAttachedBody.h">
+    <ClInclude Include=".\qpid\framing\SessionAttachedBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\SessionDetachBody.h">
+    <ClInclude Include=".\qpid\framing\SessionDetachBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\SessionDetachedBody.h">
+    <ClInclude Include=".\qpid\framing\SessionDetachedBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\SessionRequestTimeoutBody.h">
+    <ClInclude Include=".\qpid\framing\SessionRequestTimeoutBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\SessionTimeoutBody.h">
+    <ClInclude Include=".\qpid\framing\SessionTimeoutBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\SessionCommandPointBody.h">
+    <ClInclude Include=".\qpid\framing\SessionCommandPointBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\SessionExpectedBody.h">
+    <ClInclude Include=".\qpid\framing\SessionExpectedBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\SessionConfirmedBody.h">
+    <ClInclude Include=".\qpid\framing\SessionConfirmedBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\SessionCompletedBody.h">
+    <ClInclude Include=".\qpid\framing\SessionCompletedBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\SessionKnownCompletedBody.h">
+    <ClInclude Include=".\qpid\framing\SessionKnownCompletedBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\SessionFlushBody.h">
+    <ClInclude Include=".\qpid\framing\SessionFlushBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\SessionGapBody.h">
+    <ClInclude Include=".\qpid\framing\SessionGapBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\ExecutionSyncBody.h">
+    <ClInclude Include=".\qpid\framing\ExecutionSyncBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\ExecutionResultBody.h">
+    <ClInclude Include=".\qpid\framing\ExecutionResultBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\ExecutionExceptionBody.h">
+    <ClInclude Include=".\qpid\framing\ExecutionExceptionBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\MessageTransferBody.h">
+    <ClInclude Include=".\qpid\framing\MessageTransferBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\MessageAcceptBody.h">
+    <ClInclude Include=".\qpid\framing\MessageAcceptBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\MessageRejectBody.h">
+    <ClInclude Include=".\qpid\framing\MessageRejectBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\MessageReleaseBody.h">
+    <ClInclude Include=".\qpid\framing\MessageReleaseBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\MessageAcquireBody.h">
+    <ClInclude Include=".\qpid\framing\MessageAcquireBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\MessageResumeBody.h">
+    <ClInclude Include=".\qpid\framing\MessageResumeBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\MessageSubscribeBody.h">
+    <ClInclude Include=".\qpid\framing\MessageSubscribeBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\MessageCancelBody.h">
+    <ClInclude Include=".\qpid\framing\MessageCancelBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\MessageSetFlowModeBody.h">
+    <ClInclude Include=".\qpid\framing\MessageSetFlowModeBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\MessageFlowBody.h">
+    <ClInclude Include=".\qpid\framing\MessageFlowBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\MessageFlushBody.h">
+    <ClInclude Include=".\qpid\framing\MessageFlushBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\MessageStopBody.h">
+    <ClInclude Include=".\qpid\framing\MessageStopBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\TxSelectBody.h">
+    <ClInclude Include=".\qpid\framing\TxSelectBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\TxCommitBody.h">
+    <ClInclude Include=".\qpid\framing\TxCommitBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\TxRollbackBody.h">
+    <ClInclude Include=".\qpid\framing\TxRollbackBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\DtxSelectBody.h">
+    <ClInclude Include=".\qpid\framing\DtxSelectBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\DtxStartBody.h">
+    <ClInclude Include=".\qpid\framing\DtxStartBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\DtxEndBody.h">
+    <ClInclude Include=".\qpid\framing\DtxEndBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\DtxCommitBody.h">
+    <ClInclude Include=".\qpid\framing\DtxCommitBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\DtxForgetBody.h">
+    <ClInclude Include=".\qpid\framing\DtxForgetBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\DtxGetTimeoutBody.h">
+    <ClInclude Include=".\qpid\framing\DtxGetTimeoutBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\DtxPrepareBody.h">
+    <ClInclude Include=".\qpid\framing\DtxPrepareBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\DtxRecoverBody.h">
+    <ClInclude Include=".\qpid\framing\DtxRecoverBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\DtxRollbackBody.h">
+    <ClInclude Include=".\qpid\framing\DtxRollbackBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\DtxSetTimeoutBody.h">
+    <ClInclude Include=".\qpid\framing\DtxSetTimeoutBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\ExchangeDeclareBody.h">
+    <ClInclude Include=".\qpid\framing\ExchangeDeclareBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\ExchangeDeleteBody.h">
+    <ClInclude Include=".\qpid\framing\ExchangeDeleteBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\ExchangeQueryBody.h">
+    <ClInclude Include=".\qpid\framing\ExchangeQueryBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\ExchangeBindBody.h">
+    <ClInclude Include=".\qpid\framing\ExchangeBindBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\ExchangeUnbindBody.h">
+    <ClInclude Include=".\qpid\framing\ExchangeUnbindBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\ExchangeBoundBody.h">
+    <ClInclude Include=".\qpid\framing\ExchangeBoundBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\QueueDeclareBody.h">
+    <ClInclude Include=".\qpid\framing\QueueDeclareBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\QueueDeleteBody.h">
+    <ClInclude Include=".\qpid\framing\QueueDeleteBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\QueuePurgeBody.h">
+    <ClInclude Include=".\qpid\framing\QueuePurgeBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\QueueQueryBody.h">
+    <ClInclude Include=".\qpid\framing\QueueQueryBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\FileQosBody.h">
+    <ClInclude Include=".\qpid\framing\FileQosBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\FileQosOkBody.h">
+    <ClInclude Include=".\qpid\framing\FileQosOkBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\FileConsumeBody.h">
+    <ClInclude Include=".\qpid\framing\FileConsumeBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\FileConsumeOkBody.h">
+    <ClInclude Include=".\qpid\framing\FileConsumeOkBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\FileCancelBody.h">
+    <ClInclude Include=".\qpid\framing\FileCancelBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\FileOpenBody.h">
+    <ClInclude Include=".\qpid\framing\FileOpenBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\FileOpenOkBody.h">
+    <ClInclude Include=".\qpid\framing\FileOpenOkBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\FileStageBody.h">
+    <ClInclude Include=".\qpid\framing\FileStageBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\FilePublishBody.h">
+    <ClInclude Include=".\qpid\framing\FilePublishBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\FileReturnBody.h">
+    <ClInclude Include=".\qpid\framing\FileReturnBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\FileDeliverBody.h">
+    <ClInclude Include=".\qpid\framing\FileDeliverBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\FileAckBody.h">
+    <ClInclude Include=".\qpid\framing\FileAckBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\FileRejectBody.h">
+    <ClInclude Include=".\qpid\framing\FileRejectBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\StreamQosBody.h">
+    <ClInclude Include=".\qpid\framing\StreamQosBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\StreamQosOkBody.h">
+    <ClInclude Include=".\qpid\framing\StreamQosOkBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\StreamConsumeBody.h">
+    <ClInclude Include=".\qpid\framing\StreamConsumeBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\StreamConsumeOkBody.h">
+    <ClInclude Include=".\qpid\framing\StreamConsumeOkBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\StreamCancelBody.h">
+    <ClInclude Include=".\qpid\framing\StreamCancelBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\StreamPublishBody.h">
+    <ClInclude Include=".\qpid\framing\StreamPublishBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\StreamReturnBody.h">
+    <ClInclude Include=".\qpid\framing\StreamReturnBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\src\qpid\framing\StreamDeliverBody.h">
+    <ClInclude Include=".\qpid\framing\StreamDeliverBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\build\include\qpid\framing\amqp_structs.h">
+    <ClInclude Include="..\include\qpid\framing\amqp_structs.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\sys\windows\SslCredential.h">
+    <ClInclude Include=".\qpid\sys\windows\SslCredential.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\sys\windows\util.h">
+    <ClInclude Include=".\qpid\sys\windows\util.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\amqp\CharSequence.h">
+    <ClInclude Include=".\qpid\amqp\CharSequence.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\amqp\DataBuilder.h">
+    <ClInclude Include=".\qpid\amqp\DataBuilder.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\amqp\Decoder.h">
+    <ClInclude Include=".\qpid\amqp\Decoder.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\amqp\Descriptor.h">
+    <ClInclude Include=".\qpid\amqp\Descriptor.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\amqp\Encoder.h">
+    <ClInclude Include=".\qpid\amqp\Encoder.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\amqp\ListBuilder.h">
+    <ClInclude Include=".\qpid\amqp\ListBuilder.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\amqp\MapHandler.h">
+    <ClInclude Include=".\qpid\amqp\MapHandler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\amqp\MapEncoder.h">
+    <ClInclude Include=".\qpid\amqp\MapEncoder.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\amqp\MapSizeCalculator.h">
+    <ClInclude Include=".\qpid\amqp\MapSizeCalculator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\amqp\MapBuilder.h">
+    <ClInclude Include=".\qpid\amqp\MapBuilder.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\amqp\MapReader.h">
+    <ClInclude Include=".\qpid\amqp\MapReader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\amqp\MessageEncoder.h">
+    <ClInclude Include=".\qpid\amqp\MessageEncoder.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\amqp\MessageId.h">
+    <ClInclude Include=".\qpid\amqp\MessageId.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\amqp\MessageReader.h">
+    <ClInclude Include=".\qpid\amqp\MessageReader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\amqp\Reader.h">
+    <ClInclude Include=".\qpid\amqp\Reader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\amqp\Sasl.h">
+    <ClInclude Include=".\qpid\amqp\Sasl.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\amqp\SaslClient.h">
+    <ClInclude Include=".\qpid\amqp\SaslClient.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\amqp\SaslServer.h">
+    <ClInclude Include=".\qpid\amqp\SaslServer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\messaging\amqp\Transport.h">
+    <ClInclude Include=".\qpid\messaging\amqp\Transport.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\qpid\qpid-cpp-1.38.0\src\qpid\messaging\amqp\TransportContext.h">
+    <ClInclude Include=".\qpid\messaging\amqp\TransportContext.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <CustomBuild Include="E:\qpid\qpid-cpp-1.38.0\src\CMakeLists.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="E:\qpid\qpid-cpp-1.38.0\build\src\windows\resources\qpidcommon-resource.rc">
-      <Filter>Source Files</Filter>
-    </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header Files">
