@@ -3,18 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2020
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "qpid-proton-core", "proton\qpid-proton-core.vcxproj", "{0BDF7924-F6A0-36A6-A7E8-12B48CD9B51E}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "amqp", "qpid-cpp\amqp.vcxproj", "{2F96213C-546E-39EE-993E-D423BD357A50}"
-	ProjectSection(ProjectDependencies) = postProject
-		{0BDF7924-F6A0-36A6-A7E8-12B48CD9B51E} = {0BDF7924-F6A0-36A6-A7E8-12B48CD9B51E}
-	EndProjectSection
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "qpidtypes", "qpid-cpp\qpidtypes.vcxproj", "{A2D3A57C-A4E1-3690-9351-4AB1D89F0330}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "qpidcommon", "qpid-cpp\qpidcommon.vcxproj", "{770FAD14-E396-3350-BA48-2BF21CDAAA9D}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "qpidclient", "qpid-cpp\qpidclient.vcxproj", "{A68B6F73-B5B9-306F-BAB9-B078CF790A97}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "qpidmessaging", "qpid-cpp\qpidmessaging.vcxproj", "{E2329D40-53DB-3BA3-B058-854F52DB231A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0BDF7924-F6A0-36A6-A7E8-12B48CD9B51E} = {0BDF7924-F6A0-36A6-A7E8-12B48CD9B51E}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "qpid-proton-core", "proton-core\qpid-proton-core.vcxproj", "{0BDF7924-F6A0-36A6-A7E8-12B48CD9B51E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "qmf2", "qpid-cpp\qmf2.vcxproj", "{3737FE28-9ADF-337B-B017-8E232CBB6F3A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,14 +24,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0BDF7924-F6A0-36A6-A7E8-12B48CD9B51E}.Debug|x86.ActiveCfg = Debug|Win32
-		{0BDF7924-F6A0-36A6-A7E8-12B48CD9B51E}.Debug|x86.Build.0 = Debug|Win32
-		{0BDF7924-F6A0-36A6-A7E8-12B48CD9B51E}.Release|x86.ActiveCfg = Release|Win32
-		{0BDF7924-F6A0-36A6-A7E8-12B48CD9B51E}.Release|x86.Build.0 = Release|Win32
-		{2F96213C-546E-39EE-993E-D423BD357A50}.Debug|x86.ActiveCfg = Debug|Win32
-		{2F96213C-546E-39EE-993E-D423BD357A50}.Debug|x86.Build.0 = Debug|Win32
-		{2F96213C-546E-39EE-993E-D423BD357A50}.Release|x86.ActiveCfg = Release|Win32
-		{2F96213C-546E-39EE-993E-D423BD357A50}.Release|x86.Build.0 = Release|Win32
 		{A2D3A57C-A4E1-3690-9351-4AB1D89F0330}.Debug|x86.ActiveCfg = Debug|Win32
 		{A2D3A57C-A4E1-3690-9351-4AB1D89F0330}.Debug|x86.Build.0 = Debug|Win32
 		{A2D3A57C-A4E1-3690-9351-4AB1D89F0330}.Release|x86.ActiveCfg = Release|Win32
@@ -42,6 +36,18 @@ Global
 		{A68B6F73-B5B9-306F-BAB9-B078CF790A97}.Debug|x86.Build.0 = Debug|Win32
 		{A68B6F73-B5B9-306F-BAB9-B078CF790A97}.Release|x86.ActiveCfg = Release|Win32
 		{A68B6F73-B5B9-306F-BAB9-B078CF790A97}.Release|x86.Build.0 = Release|Win32
+		{E2329D40-53DB-3BA3-B058-854F52DB231A}.Debug|x86.ActiveCfg = Debug|Win32
+		{E2329D40-53DB-3BA3-B058-854F52DB231A}.Debug|x86.Build.0 = Debug|Win32
+		{E2329D40-53DB-3BA3-B058-854F52DB231A}.Release|x86.ActiveCfg = Release|Win32
+		{E2329D40-53DB-3BA3-B058-854F52DB231A}.Release|x86.Build.0 = Release|Win32
+		{0BDF7924-F6A0-36A6-A7E8-12B48CD9B51E}.Debug|x86.ActiveCfg = Debug|Win32
+		{0BDF7924-F6A0-36A6-A7E8-12B48CD9B51E}.Debug|x86.Build.0 = Debug|Win32
+		{0BDF7924-F6A0-36A6-A7E8-12B48CD9B51E}.Release|x86.ActiveCfg = Release|Win32
+		{0BDF7924-F6A0-36A6-A7E8-12B48CD9B51E}.Release|x86.Build.0 = Release|Win32
+		{3737FE28-9ADF-337B-B017-8E232CBB6F3A}.Debug|x86.ActiveCfg = Debug|Win32
+		{3737FE28-9ADF-337B-B017-8E232CBB6F3A}.Debug|x86.Build.0 = Debug|Win32
+		{3737FE28-9ADF-337B-B017-8E232CBB6F3A}.Release|x86.ActiveCfg = Release|Win32
+		{3737FE28-9ADF-337B-B017-8E232CBB6F3A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

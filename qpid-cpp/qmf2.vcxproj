@@ -11,11 +11,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{E2329D40-53DB-3BA3-B058-854F52DB231A}</ProjectGuid>
+    <ProjectGuid>{3737FE28-9ADF-337B-B017-8E232CBB6F3A}</ProjectGuid>
     <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
     <Keyword>Win32Proj</Keyword>
     <Platform>Win32</Platform>
-    <ProjectName>qpidmessaging</ProjectName>
+    <ProjectName>qmf2</ProjectName>
     <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -68,13 +68,13 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0502;BOOST_ALL_DYN_LINK;qpidmessaging_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0502;BOOST_ALL_DYN_LINK;qmf2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <AdditionalIncludeDirectories>$(BOOST_ROOT);$(ProjectDir);$(ProjectDir)..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile />
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0502;BOOST_ALL_DYN_LINK;CMAKE_INTDIR=\"Debug\";qpidmessaging_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0502;BOOST_ALL_DYN_LINK;CMAKE_INTDIR=\"Debug\";qmf2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ResourceCompile>
     <Midl>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
@@ -84,10 +84,11 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
       <AdditionalLibraryDirectories>$(BOOST_ROOT)\stage\lib;$(SolutionDir)win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>qpidtypesd.lib;qpidcommond.lib;qpidclientd.lib;qpid-proton-cored.lib</AdditionalDependencies>
+      <AdditionalDependencies>qpidtypesd.lib;qpidcommond.lib;qpidclientd.lib;qpidmessagingd.lib</AdditionalDependencies>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
@@ -107,7 +108,7 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0502;BOOST_ALL_DYN_LINK;qpidmessaging_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0502;BOOST_ALL_DYN_LINK;qmf2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
@@ -115,7 +116,7 @@
       <PrecompiledHeaderFile />
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0502;BOOST_ALL_DYN_LINK;CMAKE_INTDIR=\"Release\";qpidmessaging_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0502;BOOST_ALL_DYN_LINK;CMAKE_INTDIR=\"Release\";qmf2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ResourceCompile>
     <Midl>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
@@ -125,90 +126,74 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
-      <AdditionalLibraryDirectories>$(BOOST_ROOT)\stage\lib;$(SolutionDir)win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>qpidtypes.lib;qpidcommon.lib;qpidclient.lib;qpid-proton-core.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(BOOST_ROOT)\stage\lib;$(SolutionDir)win32</AdditionalLibraryDirectories>
+      <AdditionalDependencies>qpidtypes.lib;qpidcommon.lib;qpidclient.lib;qpidmessaging.lib</AdditionalDependencies>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include=".\qpid\messaging\amqp\AddressHelper.h" />
-    <ClCompile Include=".\qpid\messaging\amqp\AddressHelper.cpp" />
-    <ClInclude Include=".\qpid\messaging\amqp\ConnectionContext.h" />
-    <ClCompile Include=".\qpid\messaging\amqp\ConnectionContext.cpp" />
-    <ClInclude Include=".\qpid\messaging\amqp\ConnectionHandle.h" />
-    <ClCompile Include=".\qpid\messaging\amqp\ConnectionHandle.cpp" />
-    <ClInclude Include=".\qpid\messaging\amqp\DriverImpl.h" />
-    <ClCompile Include=".\qpid\messaging\amqp\DriverImpl.cpp" />
-    <ClInclude Include=".\qpid\messaging\amqp\PnData.h" />
-    <ClCompile Include=".\qpid\messaging\amqp\PnData.cpp" />
-    <ClInclude Include=".\qpid\messaging\amqp\ReceiverContext.h" />
-    <ClCompile Include=".\qpid\messaging\amqp\ReceiverContext.cpp" />
-    <ClInclude Include=".\qpid\messaging\amqp\ReceiverHandle.h" />
-    <ClCompile Include=".\qpid\messaging\amqp\ReceiverHandle.cpp" />
-    <ClInclude Include=".\qpid\messaging\amqp\Sasl.h" />
-    <ClCompile Include=".\qpid\messaging\amqp\Sasl.cpp" />
-    <ClInclude Include=".\qpid\messaging\amqp\SenderContext.h" />
-    <ClCompile Include=".\qpid\messaging\amqp\SenderContext.cpp" />
-    <ClInclude Include=".\qpid\messaging\amqp\SenderHandle.h" />
-    <ClCompile Include=".\qpid\messaging\amqp\SenderHandle.cpp" />
-    <ClInclude Include=".\qpid\messaging\amqp\SessionContext.h" />
-    <ClCompile Include=".\qpid\messaging\amqp\SessionContext.cpp" />
-    <ClInclude Include=".\qpid\messaging\amqp\SessionHandle.h" />
-    <ClCompile Include=".\qpid\messaging\amqp\SessionHandle.cpp" />
-    <ClInclude Include=".\qpid\messaging\amqp\TcpTransport.h" />
-    <ClCompile Include=".\qpid\messaging\amqp\TcpTransport.cpp" />
-    <ClInclude Include=".\qpid\messaging\amqp\Transaction.h" />
-    <ClCompile Include=".\qpid\messaging\amqp\Transaction.cpp" />
-    <ClInclude Include=".\qpid\messaging\amqp\util.h" />
-    <ClCompile Include=".\qpid\messaging\amqp\util.cpp" />
-    <ClCompile Include=".\qpid\messaging\amqp\windows\SslTransport.cpp" />
-    <ClInclude Include=".\qpid\messaging\AddressImpl.h" />
-    <ClInclude Include=".\qpid\messaging\ConnectionImpl.h" />
-    <ClInclude Include=".\qpid\messaging\ReceiverImpl.h" />
-    <ClInclude Include=".\qpid\messaging\SessionImpl.h" />
-    <ClInclude Include=".\qpid\messaging\SenderImpl.h" />
-    <ClInclude Include=".\qpid\client\amqp0_10\AcceptTracker.h" />
-    <ClCompile Include=".\qpid\client\amqp0_10\AcceptTracker.cpp" />
-    <ClInclude Include=".\qpid\client\amqp0_10\AddressResolution.h" />
-    <ClCompile Include=".\qpid\client\amqp0_10\AddressResolution.cpp" />
-    <ClInclude Include=".\qpid\client\amqp0_10\ConnectionImpl.h" />
-    <ClCompile Include=".\qpid\client\amqp0_10\ConnectionImpl.cpp" />
-    <ClInclude Include=".\qpid\client\amqp0_10\IncomingMessages.h" />
-    <ClCompile Include=".\qpid\client\amqp0_10\IncomingMessages.cpp" />
-    <ClInclude Include=".\qpid\client\amqp0_10\MessageSink.h" />
-    <ClInclude Include=".\qpid\client\amqp0_10\MessageSource.h" />
-    <ClInclude Include=".\qpid\client\amqp0_10\OutgoingMessage.h" />
-    <ClCompile Include=".\qpid\client\amqp0_10\OutgoingMessage.cpp" />
-    <ClInclude Include=".\qpid\client\amqp0_10\ReceiverImpl.h" />
-    <ClCompile Include=".\qpid\client\amqp0_10\ReceiverImpl.cpp" />
-    <ClInclude Include=".\qpid\client\amqp0_10\SessionImpl.h" />
-    <ClCompile Include=".\qpid\client\amqp0_10\SessionImpl.cpp" />
-    <ClInclude Include=".\qpid\client\amqp0_10\SenderImpl.h" />
-    <ClCompile Include=".\qpid\client\amqp0_10\SenderImpl.cpp" />
-    <ClCompile Include=".\qpid\messaging\Address.cpp" />
-    <ClInclude Include=".\qpid\messaging\AddressParser.h" />
-    <ClCompile Include=".\qpid\messaging\AddressParser.cpp" />
-    <ClCompile Include=".\qpid\messaging\Connection.cpp" />
-    <ClCompile Include=".\qpid\messaging\Duration.cpp" />
-    <ClCompile Include=".\qpid\messaging\exceptions.cpp" />
-    <ClCompile Include=".\qpid\messaging\FailoverUpdates.cpp" />
-    <ClCompile Include=".\qpid\messaging\Logger.cpp" />
-    <ClCompile Include=".\qpid\messaging\Message.cpp" />
-    <ClCompile Include=".\qpid\messaging\Receiver.cpp" />
-    <ClCompile Include=".\qpid\messaging\Session.cpp" />
-    <ClCompile Include=".\qpid\messaging\Sender.cpp" />
-    <ClInclude Include=".\qpid\messaging\ConnectionOptions.h" />
-    <ClCompile Include=".\qpid\messaging\ConnectionOptions.cpp" />
-    <ClInclude Include=".\qpid\messaging\MessageImpl.h" />
-    <ClCompile Include=".\qpid\messaging\MessageImpl.cpp" />
-    <ClCompile Include=".\qpid\messaging\Message_io.cpp" />
-    <ClCompile Include=".\qpid\messaging\ProtocolRegistry.cpp" />
-    <ClInclude Include=".\qpid\messaging\amqp\EncodedMessage.h" />
-    <ClCompile Include=".\qpid\messaging\amqp\EncodedMessage.cpp" />
+    <ClInclude Include="..\include\qmf\AgentEvent.h" />
+    <ClInclude Include="..\include\qmf\Agent.h" />
+    <ClInclude Include="..\include\qmf\AgentSession.h" />
+    <ClInclude Include="..\include\qmf\ConsoleEvent.h" />
+    <ClInclude Include="..\include\qmf\ConsoleSession.h" />
+    <ClInclude Include="..\include\qmf\DataAddr.h" />
+    <ClInclude Include="..\include\qmf\Data.h" />
+    <ClInclude Include="..\include\qmf\exceptions.h" />
+    <ClInclude Include="..\include\qmf\Handle.h" />
+    <ClInclude Include="..\include\qmf\ImportExport.h" />
+    <ClInclude Include="..\include\qmf\Query.h" />
+    <ClInclude Include="..\include\qmf\Schema.h" />
+    <ClInclude Include="..\include\qmf\SchemaId.h" />
+    <ClInclude Include="..\include\qmf\SchemaMethod.h" />
+    <ClInclude Include="..\include\qmf\SchemaProperty.h" />
+    <ClInclude Include="..\include\qmf\SchemaTypes.h" />
+    <ClInclude Include="..\include\qmf\Subscription.h" />
+    <ClInclude Include=".\qmf\agentCapability.h" />
+    <ClCompile Include=".\qmf\Agent.cpp" />
+    <ClCompile Include=".\qmf\AgentEvent.cpp" />
+    <ClInclude Include=".\qmf\AgentEventImpl.h" />
+    <ClInclude Include=".\qmf\AgentImpl.h" />
+    <ClCompile Include=".\qmf\AgentSession.cpp" />
+    <ClCompile Include=".\qmf\AgentSubscription.cpp" />
+    <ClInclude Include=".\qmf\AgentSubscription.h" />
+    <ClCompile Include=".\qmf\ConsoleEvent.cpp" />
+    <ClInclude Include=".\qmf\ConsoleEventImpl.h" />
+    <ClCompile Include=".\qmf\ConsoleSession.cpp" />
+    <ClInclude Include=".\qmf\ConsoleSessionImpl.h" />
+    <ClCompile Include=".\qmf\constants.cpp" />
+    <ClInclude Include=".\qmf\constants.h" />
+    <ClCompile Include=".\qmf\DataAddr.cpp" />
+    <ClInclude Include=".\qmf\DataAddrImpl.h" />
+    <ClCompile Include=".\qmf\Data.cpp" />
+    <ClInclude Include=".\qmf\DataImpl.h" />
+    <ClInclude Include=".\qmf\EventNotifierImpl.h" />
+    <ClCompile Include=".\qmf\EventNotifierImpl.cpp" />
+    <ClCompile Include=".\qmf\exceptions.cpp" />
+    <ClCompile Include=".\qmf\Expression.cpp" />
+    <ClInclude Include=".\qmf\Expression.h" />
+    <ClCompile Include=".\qmf\Hash.cpp" />
+    <ClInclude Include=".\qmf\Hash.h" />
+    <ClInclude Include=".\qmf\PrivateImplRef.h" />
+    <ClCompile Include=".\qmf\Query.cpp" />
+    <ClInclude Include=".\qmf\QueryImpl.h" />
+    <ClCompile Include=".\qmf\Schema.cpp" />
+    <ClCompile Include=".\qmf\SchemaCache.cpp" />
+    <ClInclude Include=".\qmf\SchemaCache.h" />
+    <ClCompile Include=".\qmf\SchemaId.cpp" />
+    <ClInclude Include=".\qmf\SchemaIdImpl.h" />
+    <ClInclude Include=".\qmf\SchemaImpl.h" />
+    <ClCompile Include=".\qmf\SchemaMethod.cpp" />
+    <ClInclude Include=".\qmf\SchemaMethodImpl.h" />
+    <ClCompile Include=".\qmf\SchemaProperty.cpp" />
+    <ClInclude Include=".\qmf\SchemaPropertyImpl.h" />
+    <ClCompile Include=".\qmf\Subscription.cpp" />
+    <ClInclude Include=".\qmf\SubscriptionImpl.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include=".\qpidclient.vcxproj">
@@ -220,6 +205,12 @@
     <ProjectReference Include=".\qpidcommon.vcxproj">
       <Project>{770FAD14-E396-3350-BA48-2BF21CDAAA9D}</Project>
       <Name>qpidcommon</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include=".\qpidmessaging.vcxproj">
+      <Project>{E2329D40-53DB-3BA3-B058-854F52DB231A}</Project>
+      <Name>qpidmessaging</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
