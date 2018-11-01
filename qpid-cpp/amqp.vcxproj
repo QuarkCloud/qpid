@@ -26,7 +26,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <CharacterSet>MultiByte</CharacterSet>
+    <CharacterSet>NotSet</CharacterSet>
     <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
@@ -46,6 +46,10 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <OutDir>$(SolutionDir)win32\</OutDir>
     <TargetName>$(ProjectName)d</TargetName>
+    <IntDir>$(Configuration)\$(ProjectName).dir\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)win32\</OutDir>
     <IntDir>$(Configuration)\$(ProjectName).dir\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -70,11 +74,9 @@
       <PrecompiledHeaderFile />
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0502;BOOST_ALL_DYN_LINK;CMAKE_INTDIR=\"Debug\";amqp_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>E:\qpid\qpid-cpp-1.38.0\src\windows\resources;E:\boost_1_68_0;E:\qpid\qpid-cpp-1.38.0\src;E:\qpid\qpid-cpp-1.38.0\src\..\include;E:\qpid\qpid-cpp-1.38.0\build\src;E:\qpid\qpid-cpp-1.38.0\build\src\..\include;E:\qpid\qpid-cpp-1.38.0\qpid-proton\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0502;BOOST_ALL_DYN_LINK;amqp_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>E:\qpid\qpid-cpp-1.38.0\src\windows\resources;E:\boost_1_68_0;E:\qpid\qpid-cpp-1.38.0\src;E:\qpid\qpid-cpp-1.38.0\src\..\include;E:\qpid\qpid-cpp-1.38.0\build\src;E:\qpid\qpid-cpp-1.38.0\build\src\..\include;E:\qpid\qpid-cpp-1.38.0\qpid-proton\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -82,14 +84,12 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>qpid-proton-cored.lib;qpidtypesd.lib;qpidcommond.lib;qpidclientd.lib;qpidmessagingd.lib</AdditionalDependencies>
+      <AdditionalDependencies>qpid-proton-cored.lib;qpidtypesd.lib;qpidcommond.lib;qpidclientd.lib;qpidmessagingd.lib;qpidbrokerd.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)win32;$(BOOST_ROOT)\stage\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>
       </IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>E:/qpid/qpid-cpp-1.38.0/build/src/Debug/amqpd.lib</ImportLibrary>
-      <ProgramDataBaseFile>E:/qpid/qpid-cpp-1.38.0/build/src/Debug/amqpd.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -98,7 +98,6 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>E:\qpid\qpid-cpp-1.38.0\src\windows\resources;E:\boost_1_68_0;E:\qpid\qpid-cpp-1.38.0\src;E:\qpid\qpid-cpp-1.38.0\src\..\include;E:\qpid\qpid-cpp-1.38.0\build\src;E:\qpid\qpid-cpp-1.38.0\build\src\..\include;E:\qpid\qpid-cpp-1.38.0\qpid-proton\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /w44996</AdditionalOptions>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -111,17 +110,17 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0502;BOOST_ALL_DYN_LINK;CMAKE_INTDIR="Release";amqp_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0502;BOOST_ALL_DYN_LINK;amqp_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
+      <AdditionalIncludeDirectories>$(BOOST_ROOT);$(ProjectDir);$(ProjectDir)..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile />
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0502;BOOST_ALL_DYN_LINK;CMAKE_INTDIR=\"Release\";amqp_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>E:\qpid\qpid-cpp-1.38.0\src\windows\resources;E:\boost_1_68_0;E:\qpid\qpid-cpp-1.38.0\src;E:\qpid\qpid-cpp-1.38.0\src\..\include;E:\qpid\qpid-cpp-1.38.0\build\src;E:\qpid\qpid-cpp-1.38.0\build\src\..\include;E:\qpid\qpid-cpp-1.38.0\qpid-proton\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0502;BOOST_ALL_DYN_LINK;amqp_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>E:\qpid\qpid-cpp-1.38.0\src\windows\resources;E:\boost_1_68_0;E:\qpid\qpid-cpp-1.38.0\src;E:\qpid\qpid-cpp-1.38.0\src\..\include;E:\qpid\qpid-cpp-1.38.0\build\src;E:\qpid\qpid-cpp-1.38.0\build\src\..\include;E:\qpid\qpid-cpp-1.38.0\qpid-proton\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -129,14 +128,11 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>Release\qpidbroker.lib;Release\qpidcommon.lib;..\..\qpid-proton\lib\qpid-proton-core.lib;Release\qpidtypes.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>E:/boost_1_68_0/stage/lib;E:/boost_1_68_0/stage/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
-      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>E:/qpid/qpid-cpp-1.38.0/build/src/Release/amqp.lib</ImportLibrary>
-      <ProgramDataBaseFile>E:/qpid/qpid-cpp-1.38.0/build/src/Release/amqp.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>$(BOOST_ROOT)\stage\lib;$(SolutionDir)win32</AdditionalLibraryDirectories>
+      <AdditionalDependencies>qpid-proton-core.lib;qpidtypes.lib;qpidcommon.lib;qpidclient.lib;qpidmessaging.lib;qpidbroker.lib</AdditionalDependencies>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>

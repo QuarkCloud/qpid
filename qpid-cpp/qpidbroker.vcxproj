@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A9F27E25-F7DA-3E6E-981B-87A9DDC6943D}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>qpidbroker</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)win32\</OutDir>
+    <IntDir>$(Configuration)\$(ProjectName).dir\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)win32\</OutDir>
+    <IntDir>$(Configuration)\$(ProjectName).dir\</IntDir>
+    <TargetName>$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions) /w44996</AdditionalOptions>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4290;4244;4800;4355;4267</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0502;BOOST_ALL_DYN_LINK;qpidbroker_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <AdditionalIncludeDirectories>$(BOOST_ROOT);$(ProjectDir)..\include;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile />
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0502;BOOST_ALL_DYN_LINK;qpidbroker_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>$(SolutionDir)win32;$(BOOST_ROOT)\stage\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>qpidtypesd.lib;qpidcommond.lib;Crypt32.lib;Secur32.lib;Advapi32.lib</AdditionalDependencies>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions) /w44996</AdditionalOptions>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4290;4244;4800;4355;4267</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0502;BOOST_ALL_DYN_LINK;qpidbroker_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <AdditionalIncludeDirectories>$(BOOST_ROOT);$(ProjectDir);$(ProjectDir)..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile />
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0502;BOOST_ALL_DYN_LINK;qpidbroker_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>qpidtypes.lib;qpidcommon.lib;Crypt32.lib;Secur32.lib;Advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(BOOST_ROOT)\stage\lib;$(SolutionDir)win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include=".\qmf\org\apache\qpid\broker\System.cpp">
+      <ObjectFileName>$(IntDir)/qmf/org/apache/qpid/broker/System.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include=".\qmf\org\apache\qpid\broker\Memory.cpp" />
+    <ClCompile Include=".\qmf\org\apache\qpid\broker\Broker.cpp">
+      <ObjectFileName>$(IntDir)/qmf/org/apache/qpid/broker/Broker.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include=".\qmf\org\apache\qpid\broker\Agent.cpp" />
+    <ClCompile Include=".\qmf\org\apache\qpid\broker\Vhost.cpp">
+      <ObjectFileName>$(IntDir)/qmf/org/apache/qpid/broker/Vhost.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include=".\qmf\org\apache\qpid\broker\Queue.cpp">
+      <ObjectFileName>$(IntDir)/qmf/org/apache/qpid/broker/Queue.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include=".\qmf\org\apache\qpid\broker\Exchange.cpp">
+      <ObjectFileName>$(IntDir)/qmf/org/apache/qpid/broker/Exchange.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include=".\qmf\org\apache\qpid\broker\Binding.cpp" />
+    <ClCompile Include=".\qmf\org\apache\qpid\broker\Subscription.cpp" />
+    <ClCompile Include=".\qmf\org\apache\qpid\broker\Connection.cpp">
+      <ObjectFileName>$(IntDir)/qmf/org/apache/qpid/broker/Connection.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include=".\qmf\org\apache\qpid\broker\Incoming.cpp" />
+    <ClCompile Include=".\qmf\org\apache\qpid\broker\Outgoing.cpp" />
+    <ClCompile Include=".\qmf\org\apache\qpid\broker\Domain.cpp" />
+    <ClCompile Include=".\qmf\org\apache\qpid\broker\Topic.cpp" />
+    <ClCompile Include=".\qmf\org\apache\qpid\broker\QueuePolicy.cpp" />
+    <ClCompile Include=".\qmf\org\apache\qpid\broker\TopicPolicy.cpp" />
+    <ClCompile Include=".\qmf\org\apache\qpid\broker\Link.cpp">
+      <ObjectFileName>$(IntDir)/qmf/org/apache/qpid/broker/Link.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include=".\qmf\org\apache\qpid\broker\Bridge.cpp">
+      <ObjectFileName>$(IntDir)/qmf/org/apache/qpid/broker/Bridge.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include=".\qmf\org\apache\qpid\broker\Session.cpp" />
+    <ClCompile Include=".\qmf\org\apache\qpid\broker\ManagementSetupState.cpp" />
+    <ClCompile Include=".\qmf\org\apache\qpid\broker\EventClientConnect.cpp" />
+    <ClCompile Include=".\qmf\org\apache\qpid\broker\EventClientConnectFail.cpp" />
+    <ClCompile Include=".\qmf\org\apache\qpid\broker\EventClientDisconnect.cpp" />
+    <ClCompile Include=".\qmf\org\apache\qpid\broker\EventBrokerLinkUp.cpp" />
+    <ClCompile Include=".\qmf\org\apache\qpid\broker\EventBrokerLinkDown.cpp" />
+    <ClCompile Include=".\qmf\org\apache\qpid\broker\EventQueueDeclare.cpp" />
+    <ClCompile Include=".\qmf\org\apache\qpid\broker\EventQueueDelete.cpp" />
+    <ClCompile Include=".\qmf\org\apache\qpid\broker\EventExchangeDeclare.cpp" />
+    <ClCompile Include=".\qmf\org\apache\qpid\broker\EventExchangeDelete.cpp" />
+    <ClCompile Include=".\qmf\org\apache\qpid\broker\EventBind.cpp" />
+    <ClCompile Include=".\qmf\org\apache\qpid\broker\EventUnbind.cpp" />
+    <ClCompile Include=".\qmf\org\apache\qpid\broker\EventSubscribe.cpp" />
+    <ClCompile Include=".\qmf\org\apache\qpid\broker\EventUnsubscribe.cpp" />
+    <ClCompile Include=".\qmf\org\apache\qpid\broker\EventQueueThresholdCrossedUpward.cpp" />
+    <ClCompile Include=".\qmf\org\apache\qpid\broker\EventQueueThresholdCrossedDownward.cpp" />
+    <ClCompile Include=".\qmf\org\apache\qpid\broker\EventQueueRedirect.cpp" />
+    <ClCompile Include=".\qmf\org\apache\qpid\broker\EventQueueRedirectCancelled.cpp" />
+    <ClCompile Include=".\qmf\org\apache\qpid\broker\EventQueueThresholdExceeded.cpp" />
+    <ClCompile Include=".\qmf\org\apache\qpid\broker\Package.cpp">
+      <ObjectFileName>$(IntDir)/qmf/org/apache/qpid/broker/Package.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include=".\qmf\org\apache\qpid\acl\Acl.cpp">
+      <ObjectFileName>$(IntDir)/qmf/org/apache/qpid/acl/Acl.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include=".\qmf\org\apache\qpid\acl\EventAllow.cpp" />
+    <ClCompile Include=".\qmf\org\apache\qpid\acl\EventDeny.cpp" />
+    <ClCompile Include=".\qmf\org\apache\qpid\acl\EventConnectionDeny.cpp" />
+    <ClCompile Include=".\qmf\org\apache\qpid\acl\EventQueueQuotaDeny.cpp" />
+    <ClCompile Include=".\qmf\org\apache\qpid\acl\EventFileLoaded.cpp" />
+    <ClCompile Include=".\qmf\org\apache\qpid\acl\EventFileLoadFailed.cpp" />
+    <ClCompile Include=".\qmf\org\apache\qpid\acl\Package.cpp">
+      <ObjectFileName>$(IntDir)/qmf/org/apache/qpid/acl/Package.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include=".\qmf\org\apache\qpid\ha\HaBroker.cpp" />
+    <ClCompile Include=".\qmf\org\apache\qpid\ha\EventMembersUpdate.cpp" />
+    <ClCompile Include=".\qmf\org\apache\qpid\ha\Package.cpp">
+      <ObjectFileName>$(IntDir)/qmf/org/apache/qpid/ha/Package.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include=".\qmf\org\apache\qpid\legacystore\Store.cpp">
+      <ObjectFileName>$(IntDir)/qmf/org/apache/qpid/legacystore/Store.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include=".\qmf\org\apache\qpid\legacystore\Journal.cpp">
+      <ObjectFileName>$(IntDir)/qmf/org/apache/qpid/legacystore/Journal.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include=".\qmf\org\apache\qpid\legacystore\EventEnqThresholdExceeded.cpp" />
+    <ClCompile Include=".\qmf\org\apache\qpid\legacystore\EventCreated.cpp" />
+    <ClCompile Include=".\qmf\org\apache\qpid\legacystore\EventFull.cpp" />
+    <ClCompile Include=".\qmf\org\apache\qpid\legacystore\EventRecovered.cpp" />
+    <ClCompile Include=".\qmf\org\apache\qpid\legacystore\Package.cpp">
+      <ObjectFileName>$(IntDir)/qmf/org/apache/qpid/legacystore/Package.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include=".\qmf\org\apache\qpid\linearstore\Store.cpp">
+      <ObjectFileName>$(IntDir)/qmf/org/apache/qpid/linearstore/Store.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include=".\qmf\org\apache\qpid\linearstore\Journal.cpp">
+      <ObjectFileName>$(IntDir)/qmf/org/apache/qpid/linearstore/Journal.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include=".\qmf\org\apache\qpid\linearstore\Package.cpp">
+      <ObjectFileName>$(IntDir)/qmf/org/apache/qpid/linearstore/Package.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include=".\qpid\broker\windows\BrokerDefaults.cpp" />
+    <ClCompile Include=".\qpid\broker\windows\SaslAuthenticator.cpp" />
+    <ClCompile Include=".\qpid\acl\Acl.cpp">
+      <ObjectFileName>$(IntDir)/qpid/acl/Acl.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include=".\qpid\acl\Acl.h" />
+    <ClCompile Include=".\qpid\acl\AclConnectionCounter.cpp" />
+    <ClInclude Include=".\qpid\acl\AclConnectionCounter.h" />
+    <ClCompile Include=".\qpid\acl\AclData.cpp" />
+    <ClInclude Include=".\qpid\acl\AclData.h" />
+    <ClCompile Include=".\qpid\acl\AclLexer.cpp" />
+    <ClInclude Include=".\qpid\acl\AclLexer.h" />
+    <ClCompile Include=".\qpid\acl\AclPlugin.cpp" />
+    <ClCompile Include=".\qpid\acl\AclReader.cpp" />
+    <ClInclude Include=".\qpid\acl\AclReader.h" />
+    <ClCompile Include=".\qpid\acl\AclResourceCounter.cpp" />
+    <ClInclude Include=".\qpid\acl\AclResourceCounter.h" />
+    <ClCompile Include=".\qpid\acl\AclValidator.cpp" />
+    <ClInclude Include=".\qpid\acl\AclValidator.h" />
+    <ClCompile Include=".\qpid\broker\windows\SslProtocolFactory.cpp" />
+    <ClInclude Include=".\qpid\amqp_0_10\Connection.h" />
+    <ClCompile Include=".\qpid\amqp_0_10\Connection.cpp">
+      <ObjectFileName>$(IntDir)/qpid/amqp_0_10/Connection.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include=".\qpid\broker\AsyncCommandCallback.h" />
+    <ClCompile Include=".\qpid\broker\AsyncCommandCallback.cpp" />
+    <ClCompile Include=".\qpid\broker\Broker.cpp">
+      <ObjectFileName>$(IntDir)/qpid/broker/Broker.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include=".\qpid\broker\Credit.cpp" />
+    <ClCompile Include=".\qpid\broker\Exchange.cpp">
+      <ObjectFileName>$(IntDir)/qpid/broker/Exchange.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include=".\qpid\broker\Fairshare.cpp" />
+    <ClCompile Include=".\qpid\broker\MessageDeque.cpp" />
+    <ClCompile Include=".\qpid\broker\MessageMap.cpp" />
+    <ClInclude Include=".\qpid\broker\ObjectFactory.h" />
+    <ClCompile Include=".\qpid\broker\ObjectFactory.cpp" />
+    <ClCompile Include=".\qpid\broker\PriorityQueue.cpp" />
+    <ClCompile Include=".\qpid\broker\Protocol.cpp" />
+    <ClCompile Include=".\qpid\broker\Queue.cpp">
+      <ObjectFileName>$(IntDir)/qpid/broker/Queue.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include=".\qpid\broker\QueueCleaner.cpp" />
+    <ClCompile Include=".\qpid\broker\QueueListeners.cpp" />
+    <ClCompile Include=".\qpid\broker\FifoDistributor.cpp" />
+    <ClCompile Include=".\qpid\broker\MessageGroupManager.cpp" />
+    <ClCompile Include=".\qpid\broker\PersistableMessage.cpp" />
+    <ClCompile Include=".\qpid\broker\PersistableObject.cpp" />
+    <ClCompile Include=".\qpid\broker\Bridge.cpp">
+      <ObjectFileName>$(IntDir)/qpid/broker/Bridge.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include=".\qpid\broker\amqp_0_10\Connection.cpp">
+      <ObjectFileName>$(IntDir)/qpid/broker/amqp_0_10/Connection.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include=".\qpid\broker\ConnectionHandler.cpp" />
+    <ClCompile Include=".\qpid\broker\DeliverableMessage.cpp" />
+    <ClCompile Include=".\qpid\broker\DeliveryRecord.cpp" />
+    <ClCompile Include=".\qpid\broker\DirectExchange.cpp" />
+    <ClCompile Include=".\qpid\broker\DtxAck.cpp" />
+    <ClCompile Include=".\qpid\broker\DtxBuffer.cpp" />
+    <ClCompile Include=".\qpid\broker\DtxManager.cpp" />
+    <ClCompile Include=".\qpid\broker\DtxTimeout.cpp" />
+    <ClCompile Include=".\qpid\broker\DtxWorkRecord.cpp" />
+    <ClCompile Include=".\qpid\broker\ExchangeRegistry.cpp" />
+    <ClCompile Include=".\qpid\broker\FanOutExchange.cpp" />
+    <ClCompile Include=".\qpid\broker\HeadersExchange.cpp" />
+    <ClCompile Include=".\qpid\broker\IngressCompletion.cpp" />
+    <ClCompile Include=".\qpid\broker\Link.cpp">
+      <ObjectFileName>$(IntDir)/qpid/broker/Link.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include=".\qpid\broker\LinkRegistry.cpp" />
+    <ClCompile Include=".\qpid\broker\LossyLvq.cpp" />
+    <ClCompile Include=".\qpid\broker\LossyQueue.cpp" />
+    <ClCompile Include=".\qpid\broker\Lvq.cpp" />
+    <ClCompile Include=".\qpid\broker\Message.cpp" />
+    <ClCompile Include=".\qpid\broker\MessageAdapter.cpp" />
+    <ClCompile Include=".\qpid\broker\MessageBuilder.cpp" />
+    <ClCompile Include=".\qpid\broker\MessageStoreModule.cpp" />
+    <ClCompile Include=".\qpid\broker\NameGenerator.cpp" />
+    <ClCompile Include=".\qpid\broker\NullMessageStore.cpp" />
+    <ClCompile Include=".\qpid\broker\PagedQueue.cpp" />
+    <ClCompile Include=".\qpid\broker\QueueBindings.cpp" />
+    <ClCompile Include=".\qpid\broker\QueuedMessage.cpp" />
+    <ClCompile Include=".\qpid\broker\QueueCursor.cpp" />
+    <ClCompile Include=".\qpid\broker\QueueDepth.cpp" />
+    <ClCompile Include=".\qpid\broker\QueueFactory.cpp" />
+    <ClCompile Include=".\qpid\broker\QueueRegistry.cpp" />
+    <ClCompile Include=".\qpid\broker\QueueSettings.cpp" />
+    <ClCompile Include=".\qpid\broker\QueueFlowLimit.cpp" />
+    <ClCompile Include=".\qpid\broker\RecoveryManagerImpl.cpp" />
+    <ClCompile Include=".\qpid\broker\RecoveredEnqueue.cpp" />
+    <ClCompile Include=".\qpid\broker\RecoveredDequeue.cpp" />
+    <ClCompile Include=".\qpid\broker\RetryList.cpp" />
+    <ClCompile Include=".\qpid\broker\SecureConnection.cpp" />
+    <ClInclude Include=".\qpid\broker\Selector.h" />
+    <ClCompile Include=".\qpid\broker\Selector.cpp" />
+    <ClInclude Include=".\qpid\broker\SelectorExpression.h" />
+    <ClCompile Include=".\qpid\broker\SelectorExpression.cpp" />
+    <ClInclude Include=".\qpid\broker\SelectorToken.h" />
+    <ClCompile Include=".\qpid\broker\SelectorToken.cpp" />
+    <ClInclude Include=".\qpid\broker\SelectorValue.h" />
+    <ClCompile Include=".\qpid\broker\SelectorValue.cpp" />
+    <ClCompile Include=".\qpid\broker\SelfDestructQueue.cpp" />
+    <ClInclude Include=".\qpid\broker\SemanticState.h" />
+    <ClCompile Include=".\qpid\broker\SemanticState.cpp" />
+    <ClCompile Include=".\qpid\broker\SessionAdapter.cpp" />
+    <ClInclude Include=".\qpid\broker\SessionState.h" />
+    <ClCompile Include=".\qpid\broker\SessionState.cpp" />
+    <ClInclude Include=".\qpid\broker\SessionManager.h" />
+    <ClCompile Include=".\qpid\broker\SessionManager.cpp" />
+    <ClInclude Include=".\qpid\broker\SessionContext.h" />
+    <ClInclude Include=".\qpid\broker\SessionHandler.h" />
+    <ClCompile Include=".\qpid\broker\SessionHandler.cpp" />
+    <ClCompile Include=".\qpid\broker\System.cpp">
+      <ObjectFileName>$(IntDir)/qpid/broker/System.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include=".\qpid\broker\ThresholdAlerts.cpp" />
+    <ClCompile Include=".\qpid\broker\TopicExchange.cpp" />
+    <ClCompile Include=".\qpid\broker\TxAccept.cpp" />
+    <ClCompile Include=".\qpid\broker\TxBuffer.cpp" />
+    <ClInclude Include=".\qpid\broker\TxDequeue.h" />
+    <ClCompile Include=".\qpid\broker\TxDequeue.cpp" />
+    <ClCompile Include=".\qpid\broker\Vhost.cpp">
+      <ObjectFileName>$(IntDir)/qpid/broker/Vhost.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include=".\qpid\broker\amqp_0_10\MessageTransfer.cpp" />
+    <ClCompile Include=".\qpid\management\ManagementAgent.cpp" />
+    <ClCompile Include=".\qpid\management\ManagementDirectExchange.cpp" />
+    <ClCompile Include=".\qpid\management\ManagementTopicExchange.cpp" />
+    <ClCompile Include=".\qpid\sys\SocketTransport.cpp" />
+    <ClCompile Include=".\qpid\sys\TCPIOPlugin.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include=".\qpidcommon.vcxproj">
+      <Project>{770FAD14-E396-3350-BA48-2BF21CDAAA9D}</Project>
+      <Name>qpidcommon</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include=".\qpidtypes.vcxproj">
+      <Project>{A2D3A57C-A4E1-3690-9351-4AB1D89F0330}</Project>
+      <Name>qpidtypes</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

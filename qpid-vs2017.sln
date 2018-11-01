@@ -18,6 +18,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "qpid-proton-core", "proton-
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "qmf2", "qpid-cpp\qmf2.vcxproj", "{3737FE28-9ADF-337B-B017-8E232CBB6F3A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "qpidbroker", "qpid-cpp\qpidbroker.vcxproj", "{A9F27E25-F7DA-3E6E-981B-87A9DDC6943D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "amqp", "qpid-cpp\amqp.vcxproj", "{2F96213C-546E-39EE-993E-D423BD357A50}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -48,6 +52,14 @@ Global
 		{3737FE28-9ADF-337B-B017-8E232CBB6F3A}.Debug|x86.Build.0 = Debug|Win32
 		{3737FE28-9ADF-337B-B017-8E232CBB6F3A}.Release|x86.ActiveCfg = Release|Win32
 		{3737FE28-9ADF-337B-B017-8E232CBB6F3A}.Release|x86.Build.0 = Release|Win32
+		{A9F27E25-F7DA-3E6E-981B-87A9DDC6943D}.Debug|x86.ActiveCfg = Debug|Win32
+		{A9F27E25-F7DA-3E6E-981B-87A9DDC6943D}.Debug|x86.Build.0 = Debug|Win32
+		{A9F27E25-F7DA-3E6E-981B-87A9DDC6943D}.Release|x86.ActiveCfg = Release|Win32
+		{A9F27E25-F7DA-3E6E-981B-87A9DDC6943D}.Release|x86.Build.0 = Release|Win32
+		{2F96213C-546E-39EE-993E-D423BD357A50}.Debug|x86.ActiveCfg = Debug|Win32
+		{2F96213C-546E-39EE-993E-D423BD357A50}.Debug|x86.Build.0 = Debug|Win32
+		{2F96213C-546E-39EE-993E-D423BD357A50}.Release|x86.ActiveCfg = Release|Win32
+		{2F96213C-546E-39EE-993E-D423BD357A50}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
