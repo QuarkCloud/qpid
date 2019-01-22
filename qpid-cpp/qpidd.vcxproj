@@ -70,7 +70,7 @@
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0502;BOOST_ALL_DYN_LINK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
-      <AdditionalIncludeDirectories>$(BOOST_ROOT);$(ProjectDir);$(ProjectDir)..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(BOOST_ROOT);$(ProjectDir);$(ProjectDir)..\include;</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile />
     </ClCompile>
     <ResourceCompile>
@@ -141,6 +141,7 @@
     <ClCompile Include=".\windows\SCM.cpp" />
     <ClCompile Include=".\qpidd.cpp" />
     <ClInclude Include=".\qpidd.h" />
+    <ClInclude Include="version-resource.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include=".\qpidbroker.vcxproj">
@@ -155,6 +156,12 @@
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="qpid-icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="qpidd-resource.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -15,6 +15,9 @@
     <ClInclude Include=".\qpidd.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="version-resource.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header Files">
@@ -23,5 +26,18 @@
     <Filter Include="Source Files">
       <UniqueIdentifier>{200479CF-CC1F-3FDD-B530-F3B5336BC87F}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{26742ce3-65fe-422e-bcde-d2e148cb10af}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="qpid-icon.ico">
+      <Filter>Resource</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="qpidd-resource.rc">
+      <Filter>Resource</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>
