@@ -38,17 +38,18 @@ using std::string;
 
 int main(int argc, char** argv) {
     const char* url = argc>1 ? argv[1] : "amqp:tcp:127.0.0.1:5672";
-    std::string connectionOptions = argc > 2 ? argv[2] : "{protocol:amqp1.0,reconnect:true}";
+    //std::string connectionOptions = argc > 2 ? argv[2] : "{protocol:amqp1.0,reconnect:true}";
+	std::string connectionOptions = argc > 2 ? argv[2] : "";
 
     Connection connection(url, connectionOptions);
      try {
         connection.open();
         Session session = connection.createSession();
 
-        Sender sender = session.createSender("service_queue_0;{create: always}");
+        Sender sender = session.createSender("service_queue;{create: always}");
 
         //create temp queue & receiver...
-        Receiver receiver = session.createReceiver("#");
+        Receiver receiver = session.createReceiver("reply_queue;{create: always}");
         Address responseQueue = receiver.getAddress();
 
 	// Now send some messages ...
